@@ -166,6 +166,8 @@ Vector BestPoint(IClientEntity *targetPlayer, Vector &final)
 	return final;
 }
 
+
+
 // Functionality
 void CRageBot::DoAimbot(CUserCmd *pCmd, bool &bSendPacket) // Creds to encore1337 for getting it to work
 {
@@ -1992,18 +1994,10 @@ void CRageBot::DoAntiAim(CUserCmd *pCmd, bool &bSendPacket) // pCmd->viewangles.
 		//}
 		
 		
-		if (Menu::Window.RageBotTab.AimbotExtraResolver.GetState()) {
-			if (antiAimSide == true) {
-				if (pLocal->GetLowerBodyYaw() >= 80 && pLocal->GetLowerBodyYaw() <= 100) {
+		if (Menu::Window.RageBotTab.AimbotChangeSideAA.GetState()) {
+			if (switchAntiAimSide == true) {
 					pCmd->viewangles.y += 180;
-				}
 			}
-			else if (antiAimSide == false) {
-				if (pLocal->GetLowerBodyYaw() >= -80 && pLocal->GetLowerBodyYaw() <= -100) {
-					pCmd->viewangles.y -= 180;
-				}
-			}
-
 		}
 
 		//if (fabsf(pLocal->GetEyeAngles().y - pLocal->GetLowerBodyYaw()) < 35 || fabsf(pLocal->GetLowerBodyYaw() - pCmd->viewangles.y) < 35) {

@@ -1357,7 +1357,7 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 				if (!Interfaces::Engine->GetPlayerInfo(i, &pTemp))
 					continue;
 
-				
+
 				// We dont use this just for deco
 				if (oldlbyyy[pEntity->GetIndex()] == pEntity->GetLowerBodyYaw()) {
 					if (oldtimer[pEntity->GetIndex()] + 1.1f >= Interfaces::Globals->curtime) {
@@ -1377,73 +1377,88 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 					oldtimer[pEntity->GetIndex()] = Interfaces::Globals->curtime - nci->GetAvgLatency(FLOW_OUTGOING);
 					isLBYPredictited[pEntity->GetIndex()] = false;
 				}
-				
+
 
 				//.... Delta
 				float deltadif = abs(pEntity->GetEyeAngles().y - pEntity->GetLowerBodyYaw());
 
-			
+
 				static float oldlowerbodyyaw;
 				static float lbyproxytime;
 				static int bullets;
 
-				if (pEntity->GetVelocity().Length2D() > 0.1f) {
+				int AimbotTargetSide = Menu::Window.RageBotTab.AimbotTargetSide.GetKey();
+				if (AimbotTargetSide >= 0 && GUI.GetKeyState(AimbotTargetSide))
+				{
 
-					ResolverStage[pEntity->GetIndex()] = 1;
-					eyeAngles->y = pEntity->GetLowerBodyYaw();
+					eyeAngles->y = pEntity->GetLowerBodyYaw() + 180;
 
 				}
+
 				else {
 
+					if (pEntity->GetVelocity().Length2D() > 0.1f) {
 
-					if (shotsfired >= 4 && shotsfired <= 6) {
-						if (saveLastHeadshotFloat[pEntity->GetIndex()] != 0) {
-							ResolverStage[pEntity->GetIndex()] = 5;
-							eyeAngles->y = saveLastHeadshotFloat[pEntity->GetIndex()];
-
-						}
-						else if (saveLastBaimFloat[pEntity->GetIndex()] != 0) {
-							ResolverStage[pEntity->GetIndex()] = 5;
-
-							eyeAngles->y = saveLastBaimFloat[pEntity->GetIndex()];
-						}
-						else if (saveLastBaim30Float[pEntity->GetIndex()] != 0) {
-							ResolverStage[pEntity->GetIndex()] = 5;
-							eyeAngles->y = saveLastBaim30Float[pEntity->GetIndex()];
-						}
-						else {
-							// Just aimbot kek
-							ResolverStage[pEntity->GetIndex()] = 6;
-						}
-
+						ResolverStage[pEntity->GetIndex()] = 1;
+						eyeAngles->y = pEntity->GetLowerBodyYaw();
 
 					}
 					else {
 
-						lbyproxytime = enemysLastProxyTimer[pEntity->GetIndex()] + 0.15f;
 
-						if (lbyproxytime != enemyLBYTimer[pEntity->GetIndex()] && abs(lbyproxytime - enemyLBYTimer[pEntity->GetIndex()]) > 0.6f) {
+						if (shotsfired >= 4 && shotsfired <= 6) {
+							if (saveLastHeadshotFloat[pEntity->GetIndex()] != 0) {
+								ResolverStage[pEntity->GetIndex()] = 5;
+								eyeAngles->y = saveLastHeadshotFloat[pEntity->GetIndex()];
+
+							}
+							else if (saveLastBaimFloat[pEntity->GetIndex()] != 0) {
+								ResolverStage[pEntity->GetIndex()] = 5;
+
+								eyeAngles->y = saveLastBaimFloat[pEntity->GetIndex()];
+							}
+							else if (saveLastBaim30Float[pEntity->GetIndex()] != 0) {
+								ResolverStage[pEntity->GetIndex()] = 5;
+								eyeAngles->y = saveLastBaim30Float[pEntity->GetIndex()];
+							}
+							else {
+								// Just aimbot kek
+								ResolverStage[pEntity->GetIndex()] = 6;
+							}
 
 
-
-							ResolverStage[pEntity->GetIndex()] = 2;
-							enemyLBYTimer[pEntity->GetIndex()] = lbyproxytime;
-							eyeAngles->y = pEntity->GetLowerBodyYaw();
-							oldlowerbodyyaw = pEntity->GetLowerBodyYaw();
 						}
-
-
 						else {
 
-							ResolverStage[pEntity->GetIndex()] = 3;
-							eyeAngles->y = oldlowerbodyyaw + deltadif;
+							lbyproxytime = enemysLastProxyTimer[pEntity->GetIndex()] + 0.15f;
+
+							if (lbyproxytime != enemyLBYTimer[pEntity->GetIndex()] && abs(lbyproxytime - enemyLBYTimer[pEntity->GetIndex()]) > 0.6f) {
+
+
+
+								ResolverStage[pEntity->GetIndex()] = 2;
+								enemyLBYTimer[pEntity->GetIndex()] = lbyproxytime;
+								eyeAngles->y = pEntity->GetLowerBodyYaw();
+								oldlowerbodyyaw = pEntity->GetLowerBodyYaw();
+							}
+
+
+							else {
+
+								ResolverStage[pEntity->GetIndex()] = 3;
+								eyeAngles->y = oldlowerbodyyaw + deltadif;
+
+							}
 
 						}
+
 
 					}
 
 
-				}
+			}
+
+
 			}
 					 // FOR SCHLEIFE END 
 
