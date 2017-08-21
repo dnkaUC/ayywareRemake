@@ -15,7 +15,8 @@ extern int LBYBreakerTimer;
 extern float enemysLastProxyTimer[65];
 extern float fsnLBY;
 extern float enemyLBYTimer[65];
-
+extern int hittedLogHits[65];
+extern int missedLogHits[65];
 extern bool switchAntiAimSide;
 
 extern int shotsfired;

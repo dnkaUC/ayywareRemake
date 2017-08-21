@@ -214,27 +214,22 @@ int hitmarkertime = 0;
 static float testtimeToTick;
 static float testServerTick;
 static float testTickCount64 = 1;
+template <typename T, std::size_t N> T* end_(T(&arr)[N]) { return arr + N; }
+template <typename T, std::size_t N> T* begin_(T(&arr)[N]) { return arr; }
 
-
-static int hittedLogHits;
-static int missedLogHits;
+static int hittedLogHits[65];
+static int missedLogHits[65];
 
 void imfinnarunuponya(IGameEvent* pEvent)
 {
-	/*
-	int iAttacker = Interfaces::Engine->GetPlayerForUserID(pEvent->GetInt("attacker", false));
-	int iVictim = Interfaces::Engine->GetPlayerForUserID(pEvent->GetInt("userid", false));
-	int iDamage = pEvent->GetInt("dmg_health", false);
 
-	if (iAttacker == Interfaces::Engine->GetLocalPlayer() && iVictim != Interfaces::Engine->GetLocalPlayer())
-	{
-		Interfaces::Engine->
-	}
-	*/
 	int attackerid = pEvent->GetInt("attacker");
 	int userid = pEvent->GetInt("userid");
 	int dmg = pEvent->GetInt("dmg_health");
 	int hitgroup = pEvent->GetInt("hitgroup");
+
+	IClientEntity* pEntity = Interfaces::EntList->GetClientEntity(Interfaces::Engine->GetPlayerForUserID(userid));
+	IClientEntity *pLocal = Interfaces::EntList->GetClientEntity(Interfaces::Engine->GetLocalPlayer());
 
 	if (Interfaces::Engine->GetPlayerForUserID(userid) == Interfaces::Engine->GetLocalPlayer()) {
 
@@ -255,13 +250,11 @@ void imfinnarunuponya(IGameEvent* pEvent)
 		PlaySoundA("C:\\Hitmarker.wav", NULL, SND_FILENAME | SND_ASYNC);
 		
 		// WE have hitted someone is pretty good or???
-		hittedLogHits++;
-
-		IClientEntity* pEntity = Interfaces::EntList->GetClientEntity(Interfaces::Engine->GetPlayerForUserID(userid));
-		IClientEntity *pLocal = Interfaces::EntList->GetClientEntity(Interfaces::Engine->GetLocalPlayer());
 
 		if (!pEntity || !pLocal || pEntity == pLocal)
 			return;
+
+		hittedLogHits[pEntity->GetIndex()]++;
 
 		if (pEntity->GetVelocity().Length2D() == 0) {
 			if (hitgroup == 1) {
@@ -278,83 +271,6 @@ void imfinnarunuponya(IGameEvent* pEvent)
 
 		
 	}
-	else {
-		// we missed ?????? log it...
-		missedLogHits++;
-		
-	}
-
-	/*
-	int entityid = Interfaces::Engine->GetPlayerForUserID(attackerid);
-	IClientEntity *pLocal = Interfaces::EntList->GetClientEntity(Interfaces::Engine->GetLocalPlayer());
-	for (int i = 0; i < Interfaces::Engine->GetMaxClients(); ++i)
-	{
-		IClientEntity *pEntity = Interfaces::EntList->GetClientEntity(i);
-		if (!pEntity || pEntity->IsDormant() || pEntity == pLocal)
-			continue;
-		Vector* eyeAngles = pEntity->GetEyeAnglesPointer();
-		player_info_t pTemp;
-
-		if (!Interfaces::Engine->GetPlayerInfo(i, &pTemp))
-			continue;
-
-
-			if (entityid == Interfaces::Engine->GetLocalPlayer())
-			{
-				
-
-				hitmarkertime = 255;
-				PlaySoundA("C:\\Hitmarker.wav", NULL, SND_FILENAME | SND_ASYNC);
-				if (pEntity->GetVelocity().Length2D() == 0) {
-
-				int nUserID = pEvent->GetInt("attacker");
-				int nDead = pEvent->GetInt("userid");
-				int dmg = pEvent->GetInt("dmg_health");
-
-				if (nUserID || nDead)
-				{
-					int headshot = pEvent->GetInt("hitgroup");
-
-					if (headshot == 1)
-					{
-						saveLastHeadshotFloat[pEntity->GetIndex()] = pEntity->GetTargetYaw();
-					}
-					else {
-						if (dmg > 50) {
-							saveLastBaimFloat[pEntity->GetIndex()] = pEntity->GetTargetYaw();
-						
-
-						}
-						else if (dmg > 30) {
-
-							saveLastBaim30Float[pEntity->GetIndex()] = pEntity->GetTargetYaw();
-							
-
-						}
-						else if (dmg > 10) {
-
-							saveLastBaim10Float[pEntity->GetIndex()] = pEntity->GetTargetYaw();
-							
-
-						}
-
-
-
-					}
-				}
-
-
-
-				}
-
-			}
-
-		
-
-	}
-	*/
-	
-	
 
 
 }
@@ -370,6 +286,9 @@ void testResolver(IGameEvent* pEvent) {
 	roundStartTest = true;
 	roundStartTimer++;
 	shotsfired = 0;
+	std::fill(begin_(hittedLogHits), end_(hittedLogHits), 0);
+	std::fill(begin_(missedLogHits), end_(missedLogHits), 0);
+
 }
 
 void imfinnakillyou(IGameEvent* pEvent)
@@ -595,7 +514,7 @@ bool __stdcall CreateMoveClient_Hooked(/*void* self, int edx,*/ float frametime,
 
 		// (CurTickCount - TicksBack - 1)
 		
-		printf("Createmove\n");
+	
 		//CBacktracking RestoreData();
 		// Backup for safety
 		Vector origView = pCmd->viewangles;
@@ -741,7 +660,7 @@ bool __stdcall CreateMoveClient_Hooked(/*void* self, int edx,*/ float frametime,
 
 		}
 
-		printf("Createmove END\n");
+		
 		//pCmd->aimdirection -= 12;
 
 		//pCmd->tick_count -= 12;
@@ -870,17 +789,6 @@ void __fastcall PaintTraverse_Hooked(PVOID pPanels, int edx, unsigned int vguiPa
 		char bufferlineFakeAngle[64];
 		sprintf_s(bufferlineFakeAngle, "Fake Angle:  %.1f", lineFakeAngle);
 		Render::Text(70, 360, Color(202, 43, 43, 255), Render::Fonts::MenuBold, bufferlineFakeAngle);
-
-		char buffermissedLoghits[64];
-		sprintf_s(buffermissedLoghits, "Missed Shots:  %i", missedLogHits);
-		Render::Text(70, 380, Color(202, 43, 43, 255), Render::Fonts::MenuBold, buffermissedLoghits);
-
-		char bufferhittedhits[64];
-		sprintf_s(bufferhittedhits, "Hitted Shots:  %i", hittedLogHits);
-		Render::Text(70, 400, Color(202, 43, 43, 255), Render::Fonts::MenuBold, bufferhittedhits);
-
-
-		
 
 
 		if (Menu::Window.MiscTab.OtherWatermark.GetState())
@@ -1144,8 +1052,7 @@ void __fastcall Hooked_DrawModelExecute(void* thisptr, int edx, void* ctx, void*
 	Interfaces::ModelRender->ForcedMaterialOverride(NULL);
 }
 
-template <typename T, std::size_t N> T* end_(T(&arr)[N]) { return arr + N; }
-template <typename T, std::size_t N> T* begin_(T(&arr)[N]) { return arr; }
+
 
 
 
@@ -1263,13 +1170,14 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 		//Utilities::Log("APPLY SKIN APPLY SKIN");
 		IClientEntity *pLocal = Interfaces::EntList->GetClientEntity(Interfaces::Engine->GetLocalPlayer());
 		INetChannelInfo *nci = Interfaces::Engine->GetNetChannelInfo();
-		printf("HOOKS POSTUPDATE\n");
+		
 		//AllocConsole();
 		//freopen("CONIN$", "r", stdin);
 		//freopen("CONOUT$", "w", stdout);
 		//freopen("CONOUT$", "w", stderr);
+		//SetConsoleTitle("Testing");
 
-		//SetConsoleTitle("LBY Prediction");
+		
 
 		static float myOldLby;
 		static float myoldTime;
@@ -1377,6 +1285,13 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 				if (!Interfaces::Engine->GetPlayerInfo(i, &pTemp))
 					continue;
 
+				if (abs(shotsfired - hittedLogHits[pEntity->GetIndex()]) > 0) {
+					missedLogHits[pEntity->GetIndex()] = abs(shotsfired - hittedLogHits[pEntity->GetIndex()]);
+				}
+
+				//printf("MissedLogHits: %i Index: %i\n", missedLogHits[pEntity->GetIndex()] , pEntity->GetIndex());
+				//printf("Shotsfired: %i\n", shotsfired);
+				//printf("Hitted: %i Index: %i\n", hittedLogHits[pEntity->GetIndex()], pEntity->GetIndex());
 
 				// We dont use this just for deco
 				if (oldlbyyy[pEntity->GetIndex()] == pEntity->GetLowerBodyYaw()) {
@@ -1418,7 +1333,7 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 					else {
 
 
-						if (shotsfired >= 4 && shotsfired <= 6) {
+						if (missedLogHits[pEntity->GetIndex()] >= 3 && missedLogHits[pEntity->GetIndex()] <= 4) {
 							if (saveLastHeadshotFloat[pEntity->GetIndex()] != 0) {
 								ResolverStage[pEntity->GetIndex()] = 5;
 								eyeAngles->y = saveLastHeadshotFloat[pEntity->GetIndex()];
@@ -1459,6 +1374,8 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 
 								ResolverStage[pEntity->GetIndex()] = 3;
 								eyeAngles->y = oldlowerbodyyaw + deltadif;
+
+								
 
 							}
 

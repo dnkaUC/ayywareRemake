@@ -30,6 +30,7 @@ void FixY(const CRecvProxyData *pData, void *pStruct, void *pOut)
 	}
 
 
+
 	int AimbotTargetSide = Menu::Window.RageBotTab.AimbotTargetSide.GetKey();
 	if (AimbotTargetSide >= 0 && GUI.GetKeyState(AimbotTargetSide))
 	{
@@ -66,6 +67,18 @@ void FixY(const CRecvProxyData *pData, void *pStruct, void *pOut)
 		//*(float*)((uintptr_t)player + offsets.m_angEyeAngles + 4) = yClamped;
 		enemyLBYDelta[player->GetIndex()] = yClamped;
 		*(float*)(pOut) = yClamped;
+	}
+	else if (missedLogHits[player->GetIndex()] >= 5 ){
+		flYaw = flYaw + 180;
+		*(float*)(pOut) = flYaw;
+	}
+	else if (missedLogHits[player->GetIndex()] >= 6) {
+		flYaw = flYaw + 90;
+		*(float*)(pOut) = flYaw;
+	}
+	else if (missedLogHits[player->GetIndex()] >= 7 && missedLogHits[player->GetIndex()] <= 8) {
+		flYaw = flYaw - 90;
+		*(float*)(pOut) = flYaw;
 	}
 	else {
 		*(float*)(pOut) = flYaw;

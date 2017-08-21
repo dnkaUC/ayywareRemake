@@ -73,6 +73,10 @@ float lineRealAngle;
 float lineFakeAngle;
 float autowalldmgtest[65];
 
+
+int hittedLogHits[65];
+int missedLogHits[65];
+
 // Our thread we use to setup everything we need
 // Everything appart from code in hooks get's called from inside 
 // here.

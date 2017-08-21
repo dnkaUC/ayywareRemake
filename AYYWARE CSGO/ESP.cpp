@@ -761,9 +761,9 @@ void CEsp::DrawName(player_info_t pinfo, CEsp::ESPBox size, IClientEntity* pEnti
 			sprintf_s(asasaasasas, "DMG");
 			Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y + 32, Color(255, 0, 0, 200), Render::Fonts::ESP, asasaasasas);
 		}
-
+		
 		//char sdsdsdsd[64];
-		//sprintf_s(sdsdsdsd, "LBY: %f", enemyLBYDelta[pEntity->GetIndex()]);
+		//sprintf_s(sdsdsdsd, "Missed Shots: %i Index: %i", missedLogHits[pEntity->GetIndex()] , pEntity->GetIndex());
 		//Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y + 16, Color(255, 0, 0, 255), Render::Fonts::ESP, sdsdsdsd);
 
 		//char sdsdsddddsd[64];

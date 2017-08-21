@@ -14,7 +14,8 @@ UC Community <3
 #pragma once
 
 #include "Hacks.h"
-
+extern int hittedLogHits[65];
+extern int missedLogHits[65];
 extern int ResolverMode;
 extern float enemyLBYTimer[65];
 extern float enemysLastProxyTimer[65];
