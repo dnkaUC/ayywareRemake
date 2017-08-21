@@ -192,6 +192,17 @@ void CRageBot::DoAimbot(CUserCmd *pCmd, bool &bSendPacket) // Creds to encore133
 	else
 		return;
 
+	if (GameUtils::IsRevolver(pWeapon))
+	{
+		static int delay = 0;
+		delay++;
+
+		if (delay <= 15)
+			pCmd->buttons |= IN_ATTACK;
+		else
+			delay = 0;
+	}
+
 	// Make sure we have a good target
 	if (IsLocked && TargetID >= 0 && HitBox >= 0)
 	{

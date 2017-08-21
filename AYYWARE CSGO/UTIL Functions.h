@@ -77,6 +77,7 @@ namespace GameUtils
 	bool IsAK(void* weapon);
 	bool IsUSP(void* weapon);
 	bool IsPistol(void* weapon);
+	bool IsRevolver(void * weapon);
 	bool IsSniper(void* weapon);
 	bool IsScopedWeapon(void* weapon);
 	int GetPlayerCompRank(IClientEntity* pEntity);

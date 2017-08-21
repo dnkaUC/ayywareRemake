@@ -185,6 +185,15 @@ bool GameUtils::IsPistol(void* weapon)
 	return (std::find(v.begin(), v.end(), id) != v.end());
 }
 
+bool GameUtils::IsRevolver(void* weapon)
+{
+	if (weapon == nullptr) return false;
+	CBaseCombatWeapon *pWeapon = (CBaseCombatWeapon*)weapon;
+	int id = *pWeapon->m_AttributeManager()->m_Item()->ItemDefinitionIndex();
+	static const std::vector<int> v = { WEAPON_REVOLVER };
+	return (std::find(v.begin(), v.end(), id) != v.end());
+}
+
 bool GameUtils::IsSniper(void* weapon)
 {
 	if (weapon == nullptr) return false;
