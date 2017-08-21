@@ -15,4 +15,6 @@
  - edited some other Stuff
  - Enemy HP set it too 100
  - Updated LBY Text
+ - Added Target Switch Side on Key Press
+ - Fixed Some Bugs
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
