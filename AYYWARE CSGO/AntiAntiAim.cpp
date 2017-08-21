@@ -228,15 +228,14 @@ void LowerBodyYawHook(const CRecvProxyData* data, void *pStruct, void *out)
 	}
 
 
-
+	
 	if (player == pLocal) {
 		float NowLBY = data->m_Value.m_Float;
 		static float lowerBodyYawUpdateTime;
-		static float StoredTime;
 		
 		// Some test Vars
 		//consoleProxyLbyLASTUpdateTime = pLocal->GetTickBase() - TIME_TO_TICKS(nci->GetAvgLatency(FLOW_OUTGOING));
-		
+
 		
 		//lowerBodyYawUpdateTime = pCmd->tick_count - TIME_TO_TICKS(nci->GetAvgLatency(FLOW_OUTGOING));
 		lowerBodyYawUpdateTime = Interfaces::Globals->curtime - nci->GetAvgLatency(FLOW_OUTGOING);
@@ -261,12 +260,22 @@ void LowerBodyYawHook(const CRecvProxyData* data, void *pStruct, void *out)
 			NowLBY = testLBY;
 		}
 
-		
+
+		if (savedLBY != NowLBY) {
+			savedLBY = NowLBY;
+			islbyupdate = true;
+		}
+		else {
+			islbyupdate = false;
+		}
+
 		testFloat2 = lowerBodyYawUpdateTime;
+		
 		*(float*)out = NowLBY;
 
 	}
 
+	
 
 
 

@@ -780,7 +780,7 @@ void __fastcall PaintTraverse_Hooked(PVOID pPanels, int edx, unsigned int vguiPa
 
 			hitmarkertime -= 2;
 		}
-
+		
 		if (islbyupdate == true) {
 			//char buffer1[64];
 			//sprintf_s(buffer1, "LBY Breaker:  %f", testFloat1);
@@ -1303,15 +1303,16 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 		}
 		else {
 
-
+			
 			if (pLocal->IsAlive()) {
 
 				if (pLocal->GetVelocity().Length2D() > 0.1f && pLocal->GetFlags() & FL_ONGROUND) {
 
 					if (Interfaces::Globals->curtime >= nextLBYUpdate) {
 						nextLBYUpdate = Interfaces::Globals->curtime + 0.22;  
-
+						
 					}
+					
 
 				}
 				else {
@@ -1320,16 +1321,18 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 
 						nextLBYUpdate = Interfaces::Globals->curtime + 1.1; 
 						LBYBreakerTimer++;
-
+						
 						// TEST LBY PREDICT.... 
 						//consoleFsnMyPredictTime = nextLBYUpdate;
 
 						// BreakingLBY
 						//testFloat4 = (int)floorf(TIME_TO_TICKS(nextLBYUpdate));
 					}
+					
 
 				}
 			}
+			
 		}
 			
 			myLBYTimer = nextLBYUpdate;

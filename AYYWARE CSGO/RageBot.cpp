@@ -677,7 +677,7 @@ int CRageBot::HitScan(IClientEntity* pEntity)
 	bool Multipoint = Menu::Window.RageBotTab.TargetMultipoint.GetState();
 
 	//HitBoxesToScan.push_back((int)CSGOHitboxID::Head);
-	
+	static bool enemyHP = false;
 	
 	if (pEntity->GetVelocity().Length2D() > 3 && pEntity->GetVelocity().Length2D() < 37) {
 		HitBoxesToScan.push_back((int)CSGOHitboxID::NeckLower);
@@ -708,7 +708,12 @@ int CRageBot::HitScan(IClientEntity* pEntity)
 		
 																 // HEAD 0, // Neck 1, NeckLower 2
 	}
-
+	if (AWall == 100) {
+		enemyHP = true;
+	}
+	else {
+		enemyHP = false;
+	}
 	
 	
 #pragma endregion Get the list of shit to scan
@@ -717,8 +722,9 @@ int CRageBot::HitScan(IClientEntity* pEntity)
 	// check hits
 	for (auto HitBoxID : HitBoxesToScan)
 	{
-		if (AWall)
+		if (AWall <= 99)
 		{
+
 
 			Vector Point = GetHitboxPosition(pEntity, HitBoxID);
 		
@@ -741,6 +747,22 @@ int CRageBot::HitScan(IClientEntity* pEntity)
 			}
 			else {
 				autowalldmgtest[pEntity->GetIndex()] = 0;
+			}
+		}
+		else if (enemyHP) {
+			Vector Point = GetHitboxPosition(pEntity, HitBoxID);
+			float Damage = 0.f;
+			Color c = Color(255, 255, 255, 255);
+			if (CanHit(Point, &Damage))
+			{
+				autowalldmgtest[pEntity->GetIndex()] = Damage;
+				c = Color(0, 255, 0, 255);
+				if (Damage >= pEntity->GetHealth())
+				{
+
+					return HitBoxID;
+
+				}
 			}
 		}
 		else
