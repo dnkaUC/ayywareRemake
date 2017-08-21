@@ -19,7 +19,7 @@ void FixY(const CRecvProxyData *pData, void *pStruct, void *pOut)
 	float flYaw = pData->m_Value.m_Float;
 	bool bHasAA;
 	bool bSpinbot;
-	/*
+	
 	static float OldLowerBodyYaws[65];
 	static float OldYawDeltas[65];
 	IClientEntity* player = (IClientEntity*)pStruct;
@@ -29,33 +29,38 @@ void FixY(const CRecvProxyData *pData, void *pStruct, void *pOut)
 		return;
 	}
 
-	float CurYaw = player->GetLowerBodyYaw();
-	if (OldLowerBodyYaws[player->GetIndex()] != CurYaw) {
-		OldYawDeltas[player->GetIndex()] = player->GetEyeAngles().y - CurYaw;
-		OldLowerBodyYaws[player->GetIndex()] = CurYaw;
-		//*(float*)((uintptr_t)player + offsets.m_angEyeAngles + 4) = CurYaw;
-		enemyLBYDelta[player->GetIndex()] = CurYaw;
-		*(float*)(pOut) = CurYaw;
-		
-		return;
+	if (Menu::Window.RageBotTab.AimbotExtraResolver.GetState()) {
+
+		float CurYaw = player->GetLowerBodyYaw();
+		if (OldLowerBodyYaws[player->GetIndex()] != CurYaw) {
+			OldYawDeltas[player->GetIndex()] = player->GetEyeAngles().y - CurYaw;
+			OldLowerBodyYaws[player->GetIndex()] = CurYaw;
+			//*(float*)((uintptr_t)player + offsets.m_angEyeAngles + 4) = CurYaw;
+			enemyLBYDelta[player->GetIndex()] = CurYaw;
+			*(float*)(pOut) = CurYaw;
+
+			return;
+		}
+		else {
+			//*(float*)((uintptr_t)player + offsets.m_angEyeAngles + 4) = player->GetEyeAngles().y - OldYawDeltas[i];
+			enemyLBYDelta[player->GetIndex()] = player->GetEyeAngles().y - OldYawDeltas[player->GetIndex()];
+			*(float*)(pOut) = player->GetEyeAngles().y - OldYawDeltas[player->GetIndex()];
+
+		}
+
+		float yClamped = player->GetEyeAngles().y;
+		while (yClamped < -180.0f)
+			yClamped += 360.0f;
+
+		while (yClamped > 180.0f)
+			yClamped -= 360.0f;
+		//*(float*)((uintptr_t)player + offsets.m_angEyeAngles + 4) = yClamped;
+		enemyLBYDelta[player->GetIndex()] = yClamped;
+		*(float*)(pOut) = yClamped;
 	}
 	else {
-		//*(float*)((uintptr_t)player + offsets.m_angEyeAngles + 4) = player->GetEyeAngles().y - OldYawDeltas[i];
-		enemyLBYDelta[player->GetIndex()] = player->GetEyeAngles().y - OldYawDeltas[player->GetIndex()];
-		*(float*)(pOut) = player->GetEyeAngles().y - OldYawDeltas[player->GetIndex()];
-		
+		*(float*)(pOut) = flYaw;
 	}
-
-	float yClamped = player->GetEyeAngles().y;
-	while (yClamped < -180.0f)
-		yClamped += 360.0f;
-
-	while (yClamped > 180.0f)
-		yClamped -= 360.0f;
-	//*(float*)((uintptr_t)player + offsets.m_angEyeAngles + 4) = yClamped;
-	enemyLBYDelta[player->GetIndex()] = yClamped;
-	*(float*)(pOut) = yClamped; */
-
 		/*
 		bHasAA = ((*flPitch == 90.0f) || (*flPitch == 270.0f));
 		bSpinbot = false;
@@ -94,7 +99,7 @@ void FixY(const CRecvProxyData *pData, void *pStruct, void *pOut)
 
 		*/
 		
-	*(float*)(pOut) = flYaw;
+	//*(float*)(pOut) = flYaw;
 }
 // Simple fix for Fake-Down
 void FixX(const CRecvProxyData* pData, void* pStruct, void* pOut)

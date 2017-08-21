@@ -64,7 +64,7 @@ public:
 	CSlider   AccuracyVelocit;
 
 	CKeyBind  AimbotKeyFakeWalk;
-
+	CCheckBox AimbotExtraResolver;
 
 	CCheckBox AntiAimLBY;
 

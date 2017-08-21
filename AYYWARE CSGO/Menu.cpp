@@ -273,8 +273,13 @@ void CRageBotTab::Setup()
 	AccuracyHitchance.SetValue(10);
 	AccuracyGroup.PlaceLabledControl("Hit Chance", this, &AccuracyHitchance);
 
-	AimbotKeyFakeWalk.SetFileId("fakwewalkkey");
-	AccuracyGroup.PlaceLabledControl("Fake Walk Key", this, &AimbotKeyFakeWalk);
+
+
+	AimbotExtraResolver.SetFileId("Extra_Resolver");
+	AccuracyGroup.PlaceLabledControl("Extra Resolver On", this, &AimbotExtraResolver);
+
+	//AimbotKeyFakeWalk.SetFileId("fakwewalkkey");
+	//AccuracyGroup.PlaceLabledControl("Fake Walk Key", this, &AimbotKeyFakeWalk);
 
 	//AimbotKeyFakeWalk.SetFileId("fakwewalkkey");
 	//AimbotGroup.PlaceLabledControl("Fakewalk Key", this, &AimbotKeyFakeWalk);
