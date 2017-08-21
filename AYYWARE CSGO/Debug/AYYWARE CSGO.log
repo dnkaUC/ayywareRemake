@@ -1,0 +1,446 @@
+﻿  Window.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+  Visual.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\visual.cpp(74): warning C4244: "Argument": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\visual.cpp(75): warning C4244: "Argument": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\visual.cpp(76): warning C4244: "Argument": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\visual.cpp(77): warning C4244: "Argument": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+  Utilities.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+  UTIL Functions.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\util functions.cpp(126): warning C4305: "=": Verkürzung von "double" in "vec_t"
+c:\users\admin\desktop\testundso\ayyware csgo\util functions.cpp(127): warning C4305: "=": Verkürzung von "double" in "vec_t"
+c:\users\admin\desktop\testundso\ayyware csgo\util functions.cpp(152): warning C4101: "shit3": Unreferenzierte lokale Variable
+c:\users\admin\desktop\testundso\ayyware csgo\util functions.cpp(277): warning C4244: "=": Konvertierung von "float" in "int", möglicher Datenverlust
+  tinyxml2.cpp
+  SpoofedConvar.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\spoofedconvar.cpp(133): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\admin\desktop\testundso\ayyware csgo\spoofedconvar.cpp(149): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\admin\desktop\testundso\ayyware csgo\spoofedconvar.cpp(150): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\admin\desktop\testundso\ayyware csgo\spoofedconvar.cpp(168): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+  RSP_S2DEX.cpp
+  Resolver.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+  RenderManager.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\rendermanager.cpp(187): warning C4244: "Initialisierung": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\rendermanager.cpp(189): warning C4244: "Initialisierung": Konvertierung von "float" in "DWORD", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\rendermanager.cpp(202): warning C4244: "Initialisierung": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\rendermanager.cpp(204): warning C4244: "Initialisierung": Konvertierung von "float" in "DWORD", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\rendermanager.cpp(230): warning C4244: "=": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\rendermanager.cpp(231): warning C4244: "=": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\rendermanager.cpp(244): warning C4244: "=": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\rendermanager.cpp(245): warning C4244: "=": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+  RageBot.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\ragebot.cpp(66): warning C4305: "=": Verkürzung von "double" in "float"
+c:\users\admin\desktop\testundso\ayyware csgo\ragebot.cpp(527): warning C4244: "Initialisierung": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\ragebot.cpp(664): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\ragebot.cpp(784): warning C4244: "Argument": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\ragebot.cpp(951): warning C4244: "=": Konvertierung von "int" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\ragebot.cpp(1036): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\ragebot.cpp(1357): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\ragebot.cpp(1364): warning C4244: "=": Konvertierung von "int" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\ragebot.cpp(1499): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\ragebot.cpp(1501): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\ragebot.cpp(1502): warning C4244: "=": Konvertierung von "int" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\ragebot.cpp(1509): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\ragebot.cpp(1511): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\ragebot.cpp(1512): warning C4244: "=": Konvertierung von "int" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\ragebot.cpp(1565): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\ragebot.cpp(1622): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\ragebot.cpp(1678): warning C4305: "Argument": Verkürzung von "double" in "float"
+c:\users\admin\desktop\testundso\ayyware csgo\ragebot.cpp(1679): warning C4305: "Argument": Verkürzung von "double" in "float"
+c:\users\admin\desktop\testundso\ayyware csgo\ragebot.cpp(1735): warning C4244: "+=": Konvertierung von "double" in "int", möglicher Datenverlust
+  Offsets.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+  nosmoke.cpp
+  NoSkycpp.cpp
+  NetVars.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+  NetVarManager.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\netvarmanager.cpp(151): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: Siehe Deklaration von "sprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\netvarmanager.cpp(162): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: Siehe Deklaration von "sprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\netvarmanager.cpp(175): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: Siehe Deklaration von "sprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\netvarmanager.cpp(193): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\admin\desktop\testundso\ayyware csgo\netvarmanager.cpp(196): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+  MiscHacks.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\mischacks.cpp(316): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\mischacks.cpp(338): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\mischacks.cpp(392): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\mischacks.cpp(414): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\mischacks.cpp(420): warning C4566: Das durch den universellen Zeichennamen "\uFEFF" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+c:\users\admin\desktop\testundso\ayyware csgo\mischacks.cpp(467): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+  MetaInfo.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+  Menu.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\menu.cpp(578): warning C4068: Unbekanntes Pragma
+c:\users\admin\desktop\testundso\ayyware csgo\menu.cpp(874): warning C4305: "Argument": Verkürzung von "double" in "float"
+c:\users\admin\desktop\testundso\ayyware csgo\menu.cpp(1356): warning C4068: Unbekanntes Pragma
+c:\users\admin\desktop\testundso\ayyware csgo\menu.cpp(1448): warning C4068: Unbekanntes Pragma
+  MathFunctions.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(219): warning C4244: "return": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\mathfunctions.cpp(138): warning C4244: "=": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+  LegitBot.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\legitbot.cpp(410): warning C4244: "Argument": Konvertierung von "int" in "vec_t", möglicher Datenverlust
+  Code wird generiert...
+  Kompilieren...
+  Interfaces.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+  ReflectiveLoader.cpp
+  Hooks.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\hooks.cpp(126): warning C4005: "MakePtr": Makro-Neudefinition
+  c:\users\admin\desktop\testundso\ayyware csgo\utilities.h(27): note: Siehe vorherige Definition von "MakePtr"
+c:\users\admin\desktop\testundso\ayyware csgo\hooks.cpp(486): warning C4244: "Initialisierung": Konvertierung von "double" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\hooks.cpp(519): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\hooks.cpp(608): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\hooks.cpp(775): warning C4244: "Initialisierung": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\hooks.cpp(778): warning C4244: "Argument": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\hooks.cpp(779): warning C4244: "Argument": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\hooks.cpp(776): warning C4101: "pEvent": Unreferenzierte lokale Variable
+c:\users\admin\desktop\testundso\ayyware csgo\hooks.cpp(978): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\hooks.cpp(980): warning C4244: "Initialisierung": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\hooks.cpp(1056): warning C4305: "Argument": Verkürzung von "double" in "float"
+c:\users\admin\desktop\testundso\ayyware csgo\hooks.cpp(1110): warning C4305: "Argument": Verkürzung von "double" in "float"
+c:\users\admin\desktop\testundso\ayyware csgo\hooks.cpp(1256): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\hooks.cpp(1257): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\hooks.cpp(1434): warning C4805: "!=": unsichere Kombination von Typ "int" mit Typ "bool" in einer Operation
+c:\users\admin\desktop\testundso\ayyware csgo\hooks.cpp(1461): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\hooks.cpp(1470): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\hooks.cpp(1477): warning C4244: "Argument": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\hooks.cpp(1477): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2766): warning C4244: "=": Konvertierung von "const int" in "float", möglicher Datenverlust
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2780): note: Siehe Verweis auf die Instanziierung der gerade kompilierten Funktions-template "void std::_Fill_unchecked1<_FwdIt,_Ty>(_FwdIt,_FwdIt,const _Ty &,std::false_type)".
+          with
+          [
+              _FwdIt=float *,
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2788): note: Siehe Verweis auf die Instanziierung der gerade kompilierten Funktions-template "void std::_Fill_unchecked<_Iter,_Ty>(_FwdIt,_FwdIt,const _Ty &)".
+          with
+          [
+              _Iter=float *,
+              _Ty=int,
+              _FwdIt=float *
+          ]
+  c:\users\admin\desktop\testundso\ayyware csgo\hooks.cpp(1444): note: Siehe Verweis auf die Instanziierung der gerade kompilierten Funktions-template "void std::fill<T*,int>(_FwdIt,_FwdIt,const _Ty &)".
+          with
+          [
+              T=float,
+              _FwdIt=float *,
+              _Ty=int
+          ]
+  Hacks.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\hacks.cpp(197): warning C4305: "=": Verkürzung von "double" in "vec_t"
+  GUI.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\gui.cpp(74): warning C4800: "SHORT": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\gui.cpp(288): warning C4244: "Argument": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\gui.cpp(289): warning C4244: "Argument": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\gui.cpp(311): warning C4244: "Argument": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\gui.cpp(312): warning C4244: "Argument": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\gui.cpp(542): warning C4244: "Argument": Konvertierung von "double" in "float", möglicher Datenverlust
+  ESP.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(244): warning C4474: "sprintf_s": zu viele Argumente für Formatzeichenfolge übergeben
+  c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(244): note: Platzhalter und deren Parameter erwarten 1 variadic-Argumente, es wurden aber 2 variadic-Argumente bereitgestellt.
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(275): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(276): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(278): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(279): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(281): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(282): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(285): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(286): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(288): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(289): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(291): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(292): warning C4244: "Initialisierung": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(405): warning C4244: "Argument": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(421): warning C4244: "Argument": Konvertierung von "double" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(463): warning C4244: "Initialisierung": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(464): warning C4244: "Initialisierung": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(465): warning C4244: "Initialisierung": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(467): warning C4244: "Argument": Konvertierung von "int" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(527): warning C4244: "=": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(528): warning C4244: "=": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(529): warning C4244: "=": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(530): warning C4244: "=": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(555): warning C4244: "Argument": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(559): warning C4244: "Argument": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(569): warning C4244: "Argument": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(571): warning C4244: "Argument": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(599): warning C4244: "Argument": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(611): warning C4244: "Argument": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(624): warning C4244: "Argument": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(660): warning C4244: "=": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(661): warning C4244: "=": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(665): warning C4244: "=": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(666): warning C4244: "=": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(714): warning C4244: "Initialisierung": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(717): warning C4244: "=": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(730): warning C4804: "<": unsichere Verwendung des Typs "bool" in einer Operation
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(733): warning C4244: "Argument": Konvertierung von "double" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(745): warning C4244: "Initialisierung": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(858): warning C4244: "Initialisierung": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(861): warning C4244: "=": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(866): warning C4244: "Argument": Konvertierung von "int" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(867): warning C4244: "Argument": Konvertierung von "int" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(868): warning C4244: "Argument": Konvertierung von "int" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(869): warning C4244: "Argument": Konvertierung von "int" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(877): warning C4244: "Argument": Konvertierung von "int" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(878): warning C4244: "Argument": Konvertierung von "int" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(879): warning C4244: "Argument": Konvertierung von "int" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(880): warning C4244: "Argument": Konvertierung von "int" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(899): warning C4244: "Argument": Konvertierung von "int" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(901): warning C4244: "Argument": Konvertierung von "int" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(902): warning C4244: "Argument": Konvertierung von "int" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(903): warning C4244: "Argument": Konvertierung von "int" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(971): warning C4244: "Initialisierung": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(974): warning C4244: "=": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(981): warning C4244: "Initialisierung": Konvertierung von "double" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(982): warning C4244: "Initialisierung": Konvertierung von "double" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(991): warning C4244: "Argument": Konvertierung von "double" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(1002): warning C4244: "Argument": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(1003): warning C4244: "Argument": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(1004): warning C4244: "Argument": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(1005): warning C4244: "Argument": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(1019): warning C4244: "Argument": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(1020): warning C4244: "Argument": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(1027): warning C4244: "Argument": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(1070): warning C4552: "!": Operator hat keine Auswirkungen; Operator mit Nebeneffekt erwartet
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(1088): warning C4244: "Argument": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(1086): warning C4474: "sprintf_s": zu viele Argumente für Formatzeichenfolge übergeben
+  c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(1086): note: Platzhalter und deren Parameter erwarten 0 variadic-Argumente, es wurden aber 1 variadic-Argumente bereitgestellt.
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(1119): warning C4244: "Argument": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(1136): warning C4244: "Argument": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(1153): warning C4244: "Argument": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\esp.cpp(1178): warning C4244: "Argument": Konvertierung von "vec_t" in "int", möglicher Datenverlust
+  Dumping.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+  DLLMain.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+  CRC32.cpp
+  Controls.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\controls.cpp(86): warning C4244: "Argument": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\controls.cpp(96): warning C4244: "Argument": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\controls.cpp(196): warning C4244: "Argument": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\controls.cpp(201): warning C4244: "Argument": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\controls.cpp(202): warning C4244: "Argument": Konvertierung von "float" in "int", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\controls.cpp(221): warning C4244: "=": Konvertierung von "LONG" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\controls.cpp(223): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\controls.cpp(450): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\admin\desktop\testundso\ayyware csgo\controls.cpp(499): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\admin\desktop\testundso\ayyware csgo\controls.cpp(527): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\admin\desktop\testundso\ayyware csgo\controls.cpp(537): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+  Chams.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\chams.cpp(84): warning C4838: Konvertierung von "int" zu "float" erfordert eine einschränkende Konvertierung
+c:\users\admin\desktop\testundso\ayyware csgo\chams.cpp(84): warning C4244: "Initialisierung": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\chams.cpp(91): warning C4244: "Initialisierung": Konvertierung von "int" in "float", möglicher Datenverlust
+  Backtrack.cpp
+  Autowall.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\autowall.cpp(90): warning C4244: "*=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\autowall.cpp(105): warning C4244: "*=": Konvertierung von "double" in "float", möglicher Datenverlust
+  AntiAntiAim.cpp
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(189): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(192): warning C4244: "Argument": Konvertierung von "double" in "vec_t", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(199): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\vector.h(200): warning C4244: "Argument": Konvertierung von "double" in "const float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(104): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: Siehe Deklaration von "vsprintf"
+c:\users\admin\desktop\testundso\ayyware csgo\xor.h(117): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+c:\users\admin\desktop\testundso\ayyware csgo\entities.h(1019): warning C4244: "Argument": Konvertierung von "ULONGLONG" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\antiantiaim.cpp(20): warning C4101: "bHasAA": Unreferenzierte lokale Variable
+c:\users\admin\desktop\testundso\ayyware csgo\antiantiaim.cpp(21): warning C4101: "bSpinbot": Unreferenzierte lokale Variable
+c:\users\admin\desktop\testundso\ayyware csgo\antiantiaim.cpp(245): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\antiantiaim.cpp(253): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\antiantiaim.cpp(272): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\antiantiaim.cpp(285): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\admin\desktop\testundso\ayyware csgo\antiantiaim.cpp(293): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+  Code wird generiert...

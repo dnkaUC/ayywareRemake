@@ -1,0 +1,58 @@
+﻿  AntiAntiAim.cpp
+  Autowall.cpp
+  Backtrack.cpp
+  Chams.cpp
+  Controls.cpp
+  CRC32.cpp
+  DLLMain.cpp
+  Dumping.cpp
+  ESP.cpp
+  GUI.cpp
+  Hacks.cpp
+  Hooks.cpp
+  ReflectiveLoader.cpp
+  Interfaces.cpp
+  LegitBot.cpp
+  MathFunctions.cpp
+  Menu.cpp
+  MetaInfo.cpp
+  MiscHacks.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2766): warning C4244: "=": Konvertierung von "const int" in "float", möglicher Datenverlust (Quelldatei wird kompiliert Hooks.cpp)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2780): note: Siehe Verweis auf die Instanziierung der gerade kompilierten Funktions-template "void std::_Fill_unchecked1<_FwdIt,_Ty>(_FwdIt,_FwdIt,const _Ty &,std::false_type)".
+          with
+          [
+              _FwdIt=float *,
+              _Ty=int
+          ] (Quelldatei wird kompiliert Hooks.cpp)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2788): note: Siehe Verweis auf die Instanziierung der gerade kompilierten Funktions-template "void std::_Fill_unchecked<_Iter,_Ty>(_FwdIt,_FwdIt,const _Ty &)".
+          with
+          [
+              _Iter=float *,
+              _Ty=int,
+              _FwdIt=float *
+          ] (Quelldatei wird kompiliert Hooks.cpp)
+  Hooks.cpp(1444): note: Siehe Verweis auf die Instanziierung der gerade kompilierten Funktions-template "void std::fill<T*,int>(_FwdIt,_FwdIt,const _Ty &)".
+          with
+          [
+              T=float,
+              _FwdIt=float *,
+              _Ty=int
+          ]
+  NetVarManager.cpp
+  NetVars.cpp
+  NoSkycpp.cpp
+  nosmoke.cpp
+  Offsets.cpp
+  RageBot.cpp
+  RenderManager.cpp
+  Resolver.cpp
+  RSP_S2DEX.cpp
+  SpoofedConvar.cpp
+  tinyxml2.cpp
+  UTIL Functions.cpp
+  Utilities.cpp
+  Visual.cpp
+  Window.cpp
+     Bibliothek "C:\Users\Admin\Desktop\TESTUNDSO\Release\mNaiLa3Kso3s.lib" und Objekt "C:\Users\Admin\Desktop\TESTUNDSO\Release\mNaiLa3Kso3s.exp" werden erstellt.
+  AYYWARE CSGO.vcxproj -> C:\Users\Admin\Desktop\TESTUNDSO\Release\mNaiLa3Kso3s.dll
+  AYYWARE CSGO.vcxproj -> C:\Users\Admin\Desktop\TESTUNDSO\Release\mNaiLa3Kso3s.pdb (Full PDB)
