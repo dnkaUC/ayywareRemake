@@ -1387,15 +1387,7 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 				static float lbyproxytime;
 				static int bullets;
 
-				int AimbotTargetSide = Menu::Window.RageBotTab.AimbotTargetSide.GetKey();
-				if (AimbotTargetSide >= 0 && GUI.GetKeyState(AimbotTargetSide))
-				{
-
-					eyeAngles->y = eyeAngles->y + 180;
-
-				}
-
-				else {
+				
 
 					if (pEntity->GetVelocity().Length2D() > 0.1f) {
 
@@ -1456,7 +1448,7 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 					}
 
 
-			}
+			
 
 
 			}

@@ -29,7 +29,16 @@ void FixY(const CRecvProxyData *pData, void *pStruct, void *pOut)
 		return;
 	}
 
-	if (Menu::Window.RageBotTab.AimbotExtraResolver.GetState()) {
+
+	int AimbotTargetSide = Menu::Window.RageBotTab.AimbotTargetSide.GetKey();
+	if (AimbotTargetSide >= 0 && GUI.GetKeyState(AimbotTargetSide))
+	{
+
+		flYaw = flYaw + 180;
+		*(float*)(pOut) = flYaw;
+	}
+
+	else if (Menu::Window.RageBotTab.AimbotExtraResolver.GetState()) {
 
 		float CurYaw = player->GetLowerBodyYaw();
 		if (OldLowerBodyYaws[player->GetIndex()] != CurYaw) {
