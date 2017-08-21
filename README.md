@@ -19,6 +19,6 @@
  - Fixed Some Bugs
  - Added Baim on Key Press
  
--  EDIT  -
+EDIT:
 - Resolver Update
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
