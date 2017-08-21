@@ -681,7 +681,7 @@ int CRageBot::HitScan(IClientEntity* pEntity)
 	//HitBoxesToScan.push_back((int)CSGOHitboxID::Head);
 	static bool enemyHP = false;
 	
-	if (pEntity->GetVelocity().Length2D() > 3 && pEntity->GetVelocity().Length2D() < 37) {
+	if (pEntity->GetVelocity().Length2D() > 3 && pEntity->GetVelocity().Length2D() < 50) {
 		HitBoxesToScan.push_back((int)CSGOHitboxID::NeckLower);
 		HitBoxesToScan.push_back((int)CSGOHitboxID::Stomach); // 4
 		HitBoxesToScan.push_back((int)CSGOHitboxID::Pelvis); // 3
@@ -692,21 +692,33 @@ int CRageBot::HitScan(IClientEntity* pEntity)
 		HitBoxesToScan.push_back((int)CSGOHitboxID::RightThigh); // 8
 	}
 	else {
-	
-		HitBoxesToScan.push_back((int)CSGOHitboxID::UpperChest);
-		HitBoxesToScan.push_back((int)CSGOHitboxID::RightUpperArm);
-		HitBoxesToScan.push_back((int)CSGOHitboxID::LeftUpperArm);
-		HitBoxesToScan.push_back((int)CSGOHitboxID::Head);
-		HitBoxesToScan.push_back((int)CSGOHitboxID::Neck);
-		HitBoxesToScan.push_back((int)CSGOHitboxID::NeckLower);
-		HitBoxesToScan.push_back((int)CSGOHitboxID::LowerChest); // 5
-		HitBoxesToScan.push_back((int)CSGOHitboxID::LeftFoot); // 13
-		HitBoxesToScan.push_back((int)CSGOHitboxID::RightFoot); // 12
-		HitBoxesToScan.push_back((int)CSGOHitboxID::LeftThigh); // 9
-		HitBoxesToScan.push_back((int)CSGOHitboxID::RightThigh); // 8
-		HitBoxesToScan.push_back((int)CSGOHitboxID::Chest);
-		HitBoxesToScan.push_back((int)CSGOHitboxID::Stomach); // 4
-		HitBoxesToScan.push_back((int)CSGOHitboxID::Pelvis); // 3
+		
+		int AimbotBaimOnKey = Menu::Window.RageBotTab.AimbotBaimOnKey.GetKey();
+		if (AimbotBaimOnKey >= 0 && GUI.GetKeyState(AimbotBaimOnKey))
+		{
+			HitBoxesToScan.push_back((int)CSGOHitboxID::Stomach); // 4
+			HitBoxesToScan.push_back((int)CSGOHitboxID::LeftThigh); // 9
+			HitBoxesToScan.push_back((int)CSGOHitboxID::RightThigh); // 8
+			HitBoxesToScan.push_back((int)CSGOHitboxID::LeftFoot); // 13
+			HitBoxesToScan.push_back((int)CSGOHitboxID::RightFoot); // 12
+		}
+		else {
+
+			HitBoxesToScan.push_back((int)CSGOHitboxID::UpperChest);
+			HitBoxesToScan.push_back((int)CSGOHitboxID::RightUpperArm);
+			HitBoxesToScan.push_back((int)CSGOHitboxID::LeftUpperArm);
+			HitBoxesToScan.push_back((int)CSGOHitboxID::Head);
+			HitBoxesToScan.push_back((int)CSGOHitboxID::Neck);
+			HitBoxesToScan.push_back((int)CSGOHitboxID::NeckLower);
+			HitBoxesToScan.push_back((int)CSGOHitboxID::LowerChest); // 5
+			HitBoxesToScan.push_back((int)CSGOHitboxID::LeftFoot); // 13
+			HitBoxesToScan.push_back((int)CSGOHitboxID::RightFoot); // 12
+			HitBoxesToScan.push_back((int)CSGOHitboxID::LeftThigh); // 9
+			HitBoxesToScan.push_back((int)CSGOHitboxID::RightThigh); // 8
+			HitBoxesToScan.push_back((int)CSGOHitboxID::Chest);
+			HitBoxesToScan.push_back((int)CSGOHitboxID::Stomach); // 4
+			HitBoxesToScan.push_back((int)CSGOHitboxID::Pelvis); // 3
+		}
 		
 																 // HEAD 0, // Neck 1, NeckLower 2
 	}

@@ -67,7 +67,7 @@ public:
 	CCheckBox AimbotExtraResolver;
 	CCheckBox AimbotChangeSideAA;
 
-
+	CKeyBind  AimbotBaimOnKey;
 	CKeyBind  AimbotTargetSide;
 
 	CCheckBox AntiAimLBY;

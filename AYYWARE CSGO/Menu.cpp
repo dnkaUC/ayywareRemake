@@ -284,6 +284,9 @@ void CRageBotTab::Setup()
 	AimbotTargetSide.SetFileId("switchsideonpress");
 	AccuracyGroup.PlaceLabledControl("LBY+180 on Key", this, &AimbotTargetSide);
 
+	AimbotBaimOnKey.SetFileId("baimonkeypress");
+	AccuracyGroup.PlaceLabledControl("BAIM Key", this, &AimbotBaimOnKey);
+
 	//AimbotKeyFakeWalk.SetFileId("fakwewalkkey");
 	//AccuracyGroup.PlaceLabledControl("Fake Walk Key", this, &AimbotKeyFakeWalk);
 
