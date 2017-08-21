@@ -61,45 +61,6 @@ void FixY(const CRecvProxyData *pData, void *pStruct, void *pOut)
 	else {
 		*(float*)(pOut) = flYaw;
 	}
-		/*
-		bHasAA = ((*flPitch == 90.0f) || (*flPitch == 270.0f));
-		bSpinbot = false;
-
-		if (!bShotLastTime[((IClientEntity*)(pStruct))->GetIndex()]
-			&& (fabsf(flYaw - vLast[((IClientEntity*)(pStruct))->GetIndex()].y) > 15.0f) && !bHasAA)
-		{
-			flYaw = vLast[((IClientEntity*)(pStruct))->GetIndex()].y;
-			bShotLastTime[((IClientEntity*)(pStruct))->GetIndex()] = true;
-		}
-		else
-		{
-			if (bShotLastTime[((IClientEntity*)(pStruct))->GetIndex()]
-				&& (fabsf(flYaw - vLast[((IClientEntity*)(pStruct))->GetIndex()].y) > 15.0f))
-			{
-				bShotLastTime[((IClientEntity*)(pStruct))->GetIndex()] = true;
-				bSpinbot = true;
-			}
-			else
-			{
-				bShotLastTime[((IClientEntity*)(pStruct))->GetIndex()] = false;
-			}
-		}
-
-		vLast[((IClientEntity*)(pStruct))->GetIndex()].y = flYaw;
-
-
-		bool bTmp = bJitterFix[((IClientEntity*)(pStruct))->GetIndex()];
-
-		bJitterFix[((IClientEntity*)(pStruct))->GetIndex()] = (flYaw >= 180.0f && flYaw <= 360.0f);
-
-		if (bTmp && (flYaw >= 0.0f && flYaw <= 180.0f))
-		{
-			flYaw += 359.0f;
-		}
-
-		*/
-		
-	//*(float*)(pOut) = flYaw;
 }
 // Simple fix for Fake-Down
 void FixX(const CRecvProxyData* pData, void* pStruct, void* pOut)
@@ -273,8 +234,8 @@ void LowerBodyYawHook(const CRecvProxyData* data, void *pStruct, void *out)
 		static float lowerBodyYawUpdateTime;
 		static float StoredTime;
 		
-		// HIER WURDE LBY GEUPDATED DAS LETZE MAL...
-		consoleProxyLbyLASTUpdateTime = pLocal->GetTickBase() - TIME_TO_TICKS(nci->GetAvgLatency(FLOW_OUTGOING));
+		// Some test Vars
+		//consoleProxyLbyLASTUpdateTime = pLocal->GetTickBase() - TIME_TO_TICKS(nci->GetAvgLatency(FLOW_OUTGOING));
 		
 		
 		//lowerBodyYawUpdateTime = pCmd->tick_count - TIME_TO_TICKS(nci->GetAvgLatency(FLOW_OUTGOING));
@@ -300,10 +261,8 @@ void LowerBodyYawHook(const CRecvProxyData* data, void *pStruct, void *out)
 			NowLBY = testLBY;
 		}
 
-		//testFloat1 = fsnLBY;
+		
 		testFloat2 = lowerBodyYawUpdateTime;
-		//testFloat3 = LastLBYUpdateTime;
-		//fsnLBY = NowLBY;
 		*(float*)out = NowLBY;
 
 	}
