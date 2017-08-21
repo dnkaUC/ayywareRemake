@@ -1964,13 +1964,13 @@ void CRageBot::DoAntiAim(CUserCmd *pCmd, bool &bSendPacket) // pCmd->viewangles.
 		
 		
 
-		if (GetAsyncKeyState(0x56))
-		{ // IF V PRESSED RANDOM SHIT HERE
-			pCmd->viewangles.y = pLocal->GetLowerBodyYaw() + std::rand() % (90 + 1 - 35) + 35;
-		}
-		/*
-		else {
-
+		//if (GetAsyncKeyState(0x56))
+		//{ // IF V PRESSED RANDOM SHIT HERE
+		//	pCmd->viewangles.y = pLocal->GetLowerBodyYaw() + std::rand() % (90 + 1 - 35) + 35;
+		//}
+		
+		
+		if (Menu::Window.RageBotTab.AimbotExtraResolver.GetState()) {
 			if (antiAimSide == true) {
 				if (pLocal->GetLowerBodyYaw() >= 80 && pLocal->GetLowerBodyYaw() <= 100) {
 					pCmd->viewangles.y += 180;
@@ -1983,7 +1983,6 @@ void CRageBot::DoAntiAim(CUserCmd *pCmd, bool &bSendPacket) // pCmd->viewangles.
 			}
 
 		}
-		*/
 
 		//if (fabsf(pLocal->GetEyeAngles().y - pLocal->GetLowerBodyYaw()) < 35 || fabsf(pLocal->GetLowerBodyYaw() - pCmd->viewangles.y) < 35) {
 		//	pCmd->viewangles.y += 36;

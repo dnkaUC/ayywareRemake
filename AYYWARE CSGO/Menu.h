@@ -65,6 +65,7 @@ public:
 
 	CKeyBind  AimbotKeyFakeWalk;
 	CCheckBox AimbotExtraResolver;
+	CCheckBox AimbotChangeSideAA;
 
 	CCheckBox AntiAimLBY;
 

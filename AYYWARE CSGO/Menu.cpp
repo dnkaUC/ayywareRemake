@@ -276,7 +276,10 @@ void CRageBotTab::Setup()
 
 
 	AimbotExtraResolver.SetFileId("Extra_Resolver");
-	AccuracyGroup.PlaceLabledControl("Extra Resolver On", this, &AimbotExtraResolver);
+	AccuracyGroup.PlaceLabledControl("Extra Resolver", this, &AimbotExtraResolver);
+
+	AimbotChangeSideAA.SetFileId("changeSideAA");
+	AccuracyGroup.PlaceLabledControl("Change Side on Headshot", this, &AimbotChangeSideAA);
 
 	//AimbotKeyFakeWalk.SetFileId("fakwewalkkey");
 	//AccuracyGroup.PlaceLabledControl("Fake Walk Key", this, &AimbotKeyFakeWalk);
