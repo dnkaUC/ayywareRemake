@@ -772,22 +772,22 @@ void CEsp::DrawName(player_info_t pinfo, CEsp::ESPBox size, IClientEntity* pEnti
 
 		
 		if (ResolverStage[pEntity->GetIndex()] == 1) {
-			Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y - 32, Color(0, 0, 255, 255), Render::Fonts::ESP, "MOVING");
+			Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y - 32, Color(0, 0, 255, 255), Render::Fonts::ESP, "R::Moving");
 		}
 		else if (ResolverStage[pEntity->GetIndex()] == 2) {
-			Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y - 32, Color(0, 230, 0, 255), Render::Fonts::ESP, "LBY PREDICTED");
+			Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y - 32, Color(0, 230, 0, 255), Render::Fonts::ESP, "R::Lby Prediction");
 		}
 		else if (ResolverStage[pEntity->GetIndex()] == 3) {
-			Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y - 32, Color(255, 0, 0, 255), Render::Fonts::ESP, "BRUTEFORCE");
+			Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y - 32, Color(255, 0, 0, 255), Render::Fonts::ESP, "R::OldLBY+Delta");
 		}
 		else if (ResolverStage[pEntity->GetIndex()] == 4){
 			Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y - 32, Color(0, 12, 255, 255), Render::Fonts::ESP, "------------------");
 		}
 		else if (ResolverStage[pEntity->GetIndex()] == 5) {
-			Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y - 32, Color(0, 255, 0, 255), Render::Fonts::ESP, "DATABASE");
+			Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y - 32, Color(0, 255, 0, 255), Render::Fonts::ESP, "R::Database");
 		}
-		else if (ResolverStage[pEntity->GetIndex()] == 7) {
-			Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y - 32, Color(0, 255, 0, 255), Render::Fonts::ESP, "Resolver Reseted");
+		else if (ResolverStage[pEntity->GetIndex()] == 6) {
+			Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y - 32, Color(0, 255, 0, 255), Render::Fonts::ESP, "R::Aimbot");
 		}
 		else {
 			Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y - 32, Color(237, 140, 16, 255), Render::Fonts::ESP, "Resolver: NotActive");

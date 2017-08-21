@@ -1266,67 +1266,7 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 		else {
 			oneTickMinues = testServerTick / 64;
 		}
-		/*
-		if (pLocal->IsAlive()) {
 
-			//pCmd->tick_count;
-
-			if (pLocal->GetVelocity().Length2D() > 0.1f && pLocal->GetFlags() & FL_ONGROUND) {
-
-				if (Interfaces::Globals->curtime >= myoldTime) {
-					myoldTime = Interfaces::Globals->curtime + 0.22;  // serverTime + 
-
-				}
-
-			}
-			else {
-
-				if (Interfaces::Globals->curtime >= myoldTime && pLocal->GetFlags() & FL_ONGROUND) {
-
-					myoldTime = Interfaces::Globals->curtime + 1.1 - nci->GetAvgLatency(FLOW_OUTGOING); // serverTime +
-					LBYBreakerTimer++;
-
-					// MeINE LBY PREDICT.... 
-					consoleFsnMyPredictTime = myoldTime;
-
-					// BreakingLBY
-					//testFloat4 = (int)floorf(TIME_TO_TICKS(nextLBYUpdate));
-				}
-
-			}
-		}
-		else {
-			myoldTime = -1;
-		} */
-
-		/*
-		if (pLocal->IsAlive()) {
-
-			if (myOldLby == pLocal->GetLowerBodyYaw()) {
-
-				if (myoldTime >= Interfaces::Globals->curtime) {
-					timerino++;
-					//printf("oldTime >= Curitme %i\n", timerino);
-					//printf("-----------------------------------------------\n");
-
-					//LBYBreakerTimer++;
-					myOldLby = Interfaces::Globals->curtime + 1.1;
-				}
-
-			}
-			else {
-				LBYBreakerTimer++;
-				//printf("OLDLBY = NEWLBY %i\n", timerino);
-				//printf("-----------------------------------------------\n");
-				myOldLby = pLocal->GetLowerBodyYaw();
-				myoldTime = Interfaces::Globals->curtime - nci->GetAvgLatency(FLOW_OUTGOING);
-			}
-
-		}
-		else {
-			myoldTime = -1;
-		} 
-		myLBYTimer = myoldTime; */
 
 		
 
@@ -1341,93 +1281,6 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 		
 	
 
-
-		/*
-		for (int i = 0; i < Interfaces::Engine->GetMaxClients(); ++i)
-		{
-			IClientEntity *pEntity = Interfaces::EntList->GetClientEntity(i);
-			if (!pEntity) {
-				continue;
-			}
-			
-			if (!pEntity->IsDormant() && pEntity->GetFlags() & FL_ONGROUND && pEntity != pLocal) {
-				Vector* eyeAngles = pEntity->GetEyeAnglesPointer();
-
-				if (oldlby[pEntity->GetIndex()] == pEntity->GetLowerBodyYaw()) {
-
-					if (oldtime[pEntity->GetIndex()] + 1.1 - oneTickMinues >= Interfaces::Globals->tickcount) {
-
-						isPredicted[pEntity->GetIndex()] = true;
-						oldtime[pEntity->GetIndex()] += 1.1;
-
-					}
-
-					else {
-
-						isPredicted[pEntity->GetIndex()] = false;
-
-					}
-
-				}
-				else {
-					oldlby[pEntity->GetIndex()] = pEntity->GetLowerBodyYaw();
-					oldtime[pEntity->GetIndex()] = Interfaces::Globals->tickcount - TIME_TO_TICKS(nci->GetAvgLatency(FLOW_OUTGOING));
-					isPredicted[pEntity->GetIndex()] = true;
-				}
-
-
-				enemysLastProxyTimer[pEntity->GetIndex()] = oldtime[pEntity->GetIndex()];
-
-				static int CurrentStage[65];
-				// PITCH RESOLVER
-				if (eyeAngles->x == 180.f) eyeAngles->x = 89.f;
-				else if (eyeAngles->x > 180.f && eyeAngles->x < 290.f) eyeAngles->x = -89.f;
-				else if (eyeAngles->x >= 89.f && eyeAngles->x <= 180.f) eyeAngles->x = 89.f;
-				else if (eyeAngles->x == 0.f) {
-					int index = pEntity->GetIndex();
-					if (eyeAngles->x) {
-						if (CurrentStage[index] < 4)
-							eyeAngles->x = 89.f;
-						else if (CurrentStage[index] < 8)
-							eyeAngles->x = -89.f;
-					}
-
-				}
-
-
-				if (pEntity->GetVelocity().Length2D() > 50.f) {
-					eyeAngles->y = pEntity->GetLowerBodyYaw();
-					ResolverStage[pEntity->GetIndex()] = 1;
-				}
-				else if (isPredicted[pEntity->GetIndex()] == true) {
-					eyeAngles->y = pEntity->GetLowerBodyYaw();
-					ResolverStage[pEntity->GetIndex()] = 2;
-				}
-				else {
-					ResolverStage[pEntity->GetIndex()] = 3;
-					//eyeAngles->y = pEntity->GetLowerBodyYaw() + std::rand() % (35 + 1 - 10) + 10;
-					eyeAngles->y = pEntity->GetLowerBodyYaw();
-				}
-
-
-			
-
-
-
-
-
-			}
-			else if (pEntity->IsDormant() || pEntity->GetHealth() <= 0) {
-				oldtime[pEntity->GetIndex()] = -1;
-
-				
-
-			}
-
-			
-		}
-
-		*/
 		static int startRound;
 		
 		// 1. Time on Server LBY Update Predicten
@@ -1453,12 +1306,10 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 
 			if (pLocal->IsAlive()) {
 
-				//pCmd->tick_count;
-
 				if (pLocal->GetVelocity().Length2D() > 0.1f && pLocal->GetFlags() & FL_ONGROUND) {
 
 					if (Interfaces::Globals->curtime >= nextLBYUpdate) {
-						nextLBYUpdate = Interfaces::Globals->curtime + 0.22;  // serverTime + 
+						nextLBYUpdate = Interfaces::Globals->curtime + 0.22;  
 
 					}
 
@@ -1467,14 +1318,14 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 
 					if (Interfaces::Globals->curtime >= nextLBYUpdate && pLocal->GetFlags() & FL_ONGROUND) {
 
-						nextLBYUpdate = Interfaces::Globals->curtime + 1.1; // serverTime +
+						nextLBYUpdate = Interfaces::Globals->curtime + 1.1; 
 						LBYBreakerTimer++;
 
 						// TEST LBY PREDICT.... 
-						consoleFsnMyPredictTime = nextLBYUpdate;
+						//consoleFsnMyPredictTime = nextLBYUpdate;
 
 						// BreakingLBY
-						testFloat4 = (int)floorf(TIME_TO_TICKS(nextLBYUpdate));
+						//testFloat4 = (int)floorf(TIME_TO_TICKS(nextLBYUpdate));
 					}
 
 				}
@@ -1485,15 +1336,6 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 
 			static int startTickBase;
 			static int timerxd;
-			// alle 50 Ticks aufgerufen werden
-			
-			
-
-				//if (Menu::Window.RageBotTab.AccuracyResolver.GetIndex() == 1) {
-				//	if (pLocal->IsAlive())
-				//		R::Resolve();
-				//}
-				// ENEMY LBY TIMER
 			static float oldlbyyy[65];
 			static float oldtimer[65];
 			static bool isLBYPredictited[65];
@@ -1513,7 +1355,7 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 					continue;
 
 				
-
+				// We dont use this just for deco
 				if (oldlbyyy[pEntity->GetIndex()] == pEntity->GetLowerBodyYaw()) {
 					if (oldtimer[pEntity->GetIndex()] + 1.1f >= Interfaces::Globals->curtime) {
 						oldtimer[pEntity->GetIndex()] = Interfaces::Globals->curtime;
@@ -1534,28 +1376,14 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 				}
 				
 
+				//.... Delta
 				float deltadif = abs(pEntity->GetEyeAngles().y - pEntity->GetLowerBodyYaw());
 
-				/*
-				static int CurrentStage[65];
-				// PITCH RESOLVER
-				if (eyeAngles->x == 180.f) eyeAngles->x = 89.f;
-				else if (eyeAngles->x > 180.f && eyeAngles->x < 290.f) eyeAngles->x = -89.f;
-				else if (eyeAngles->x >= 89.f && eyeAngles->x <= 180.f) eyeAngles->x = 89.f;
-				else if (eyeAngles->x == 0.f) {
-					int index = pEntity->GetIndex();
-					if (eyeAngles->x) {
-						if (CurrentStage[index] < 4)
-							eyeAngles->x = 89.f;
-						else if (CurrentStage[index] < 8)
-							eyeAngles->x = -89.f;
-					}
-
-				}
-				*/
+			
 				static float oldlowerbodyyaw;
 				static float lbyproxytime;
 				static int bullets;
+
 				if (pEntity->GetVelocity().Length2D() > 0.1f) {
 
 					ResolverStage[pEntity->GetIndex()] = 1;
@@ -1563,6 +1391,7 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 
 				}
 				else {
+
 
 					if (shotsfired >= 4 && shotsfired <= 6) {
 						if (saveLastHeadshotFloat[pEntity->GetIndex()] != 0) {
@@ -1579,6 +1408,12 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 							ResolverStage[pEntity->GetIndex()] = 5;
 							eyeAngles->y = saveLastBaim30Float[pEntity->GetIndex()];
 						}
+						else {
+							// Just aimbot kek
+							ResolverStage[pEntity->GetIndex()] = 6;
+						}
+
+
 					}
 					else {
 
@@ -1591,127 +1426,15 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 							ResolverStage[pEntity->GetIndex()] = 2;
 							enemyLBYTimer[pEntity->GetIndex()] = lbyproxytime;
 							eyeAngles->y = pEntity->GetLowerBodyYaw();
-
-							/*
-							if (saveLastHeadshotFloat[pEntity->GetIndex()] != 0) {
-								ResolverStage[pEntity->GetIndex()] = 2;
-								eyeAngles->y = saveLastHeadshotFloat[pEntity->GetIndex()];
-
-							}
-							else if (saveLastBaimFloat[pEntity->GetIndex()] != 0) {
-								ResolverStage[pEntity->GetIndex()] = 3;
-
-								eyeAngles->y = saveLastBaimFloat[pEntity->GetIndex()];
-							}
-							else if (saveLastBaim30Float[pEntity->GetIndex()] != 0) {
-								ResolverStage[pEntity->GetIndex()] = 3;
-								eyeAngles->y = saveLastBaim30Float[pEntity->GetIndex()];
-							}
-							else if (saveLastBaim10Float[pEntity->GetIndex()] != 0) {
-								ResolverStage[pEntity->GetIndex()] = 3;
-								eyeAngles->y = saveLastBaim10Float[pEntity->GetIndex()];
-							}
-							else {
-								ResolverStage[pEntity->GetIndex()] = 4;
-								eyeAngles->y = pEntity->GetLowerBodyYaw();
-							} */
-
 							oldlowerbodyyaw = pEntity->GetLowerBodyYaw();
-
-
-							/*
-							if (pEntity->GetVelocity().Length2D() > 0.1f && pEntity->GetFlags() & FL_ONGROUND)
-							{
-								if (serverTime >= enemyLBYTimer[pEntity->GetIndex()]) {
-									enemyLBYTimer[pEntity->GetIndex()] = serverTime + 0.22;
-									eyeAngles->y = pEntity->GetLowerBodyYaw();
-
-									// TEST
-									//enemysLastProxyTimer[pEntity->GetIndex()] = abs(serverTime - enemyLBYTimer[pEntity->GetIndex()]);
-								}
-
-								ResolverStage[pEntity->GetIndex()] = 1;
-
-							}
-							else {
-								// 1.1 - ( serverTime - enemyLBYTimer[pEntity->GetIndex()]  )
-								if (serverTime >= enemyLBYTimer[pEntity->GetIndex()] && pEntity->GetFlags() & FL_ONGROUND) {
-									enemyLBYTimer[pEntity->GetIndex()] = serverTime + 1.1f - nci->GetAvgLatency(FLOW_OUTGOING);
-									// ENEMYS LBY UPDATED HERE
-									eyeAngles->y = pEntity->GetLowerBodyYaw() + 180;
-									//oldlowerbodyyaw = pEntity->GetLowerBodyYaw();
-									//oldlowerbodyyaw = pEntity->GetLowerBodyYaw();
-									// TEST
-									//enemysLastProxyTimer[pEntity->GetIndex()] = abs(serverTime - enemyLBYTimer[pEntity->GetIndex()]);
-									ResolverStage[pEntity->GetIndex()] = 2;
-
-								}
-								else {
-
-									if (pEntity->GetVelocity().Length2D() > 0.1f) {
-										ResolverStage[pEntity->GetIndex()] = 3;
-										eyeAngles->y = pEntity->GetLowerBodyYaw();
-
-									}
-									else {
-
-										if (abs(pEntity->GetEyeAngles().y - pEntity->GetLowerBodyYaw()) > 35) {
-											// FAKE ANGLE
-											ResolverStage[pEntity->GetIndex()] = 4;
-											int random = rand() % 2;
-											switch (random)
-											{
-											case 0:
-												eyeAngles->y = eyeAngles->y + 90.0;
-												break;
-											case 1:
-												eyeAngles->y = eyeAngles->y - 90.0;
-												break;
-											}
-
-
-										}
-
-
-									}
-									*/
-							ResolverStage[pEntity->GetIndex()] = 5; // Unkownn?????
-
-
 						}
 
 
 						else {
 
 							ResolverStage[pEntity->GetIndex()] = 3;
-							//eyeAngles->y = oldlowerbodyyaw;
-
-
 							eyeAngles->y = oldlowerbodyyaw + deltadif;
 
-
-
-							/*
-							if (saveLastHeadshotFloat[pEntity->GetIndex()] != 0) {
-								ResolverStage[pEntity->GetIndex()] = 2;
-								eyeAngles->y = saveLastHeadshotFloat[pEntity->GetIndex()];
-
-							}
-							else if (saveLastBaimFloat[pEntity->GetIndex()] != 0) {
-								ResolverStage[pEntity->GetIndex()] = 3;
-								eyeAngles->y = saveLastBaimFloat[pEntity->GetIndex()];
-							}
-							else if (saveLastBaim30Float[pEntity->GetIndex()] != 0) {
-								ResolverStage[pEntity->GetIndex()] = 3;
-								eyeAngles->y = saveLastBaim30Float[pEntity->GetIndex()];
-							}
-							else if (saveLastBaim10Float[pEntity->GetIndex()] != 0) {
-								ResolverStage[pEntity->GetIndex()] = 3;
-								eyeAngles->y = saveLastBaim10Float[pEntity->GetIndex()];
-							}
-							else {
-
-							} */
 						}
 
 					}
@@ -1719,18 +1442,11 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 
 				}
 			}
-					 // FOR SCHLEIFE ENDE 
-
-
-			
-
-			printf("HOOKS POSTUPDATE END\n");
+					 // FOR SCHLEIFE END 
 
 			
 
-		
-	
-			//testFloat4 = nextLBYUpdate;
+
 
 		
 		
