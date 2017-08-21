@@ -243,7 +243,7 @@ void LowerBodyYawHook(const CRecvProxyData* data, void *pStruct, void *out)
 		static float lowerBodyYawUpdateTime;
 		
 		// Some test Vars
-		//consoleProxyLbyLASTUpdateTime = pLocal->GetTickBase() - TIME_TO_TICKS(nci->GetAvgLatency(FLOW_OUTGOING));
+		consoleProxyLbyLASTUpdateTime = pLocal->GetTickBase() - TIME_TO_TICKS(nci->GetAvgLatency(FLOW_OUTGOING));
 		lowerBodyYawUpdateTime = Interfaces::Globals->curtime - nci->GetAvgLatency(FLOW_OUTGOING);
 
 		float testLBY;

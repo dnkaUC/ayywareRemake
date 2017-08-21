@@ -216,7 +216,8 @@ static float testServerTick;
 static float testTickCount64 = 1;
 
 
-
+static int hittedLogHits;
+static int missedLogHits;
 
 void imfinnarunuponya(IGameEvent* pEvent)
 {
@@ -236,7 +237,8 @@ void imfinnarunuponya(IGameEvent* pEvent)
 	int hitgroup = pEvent->GetInt("hitgroup");
 
 	if (Interfaces::Engine->GetPlayerForUserID(userid) == Interfaces::Engine->GetLocalPlayer()) {
-		// WENN ICH SELBER GEHITTET WURDE
+
+		// If we got hitted in our Head Sideswitch
 		if (hitgroup == 1) {
 			//SwitchAntiAimSide
 			switchAntiAimSide = true;
@@ -246,11 +248,14 @@ void imfinnarunuponya(IGameEvent* pEvent)
 		}
 	}
 
+
 	if (Interfaces::Engine->GetPlayerForUserID(attackerid) == Interfaces::Engine->GetLocalPlayer())
 	{
 		hitmarkertime = 255;
 		PlaySoundA("C:\\Hitmarker.wav", NULL, SND_FILENAME | SND_ASYNC);
 		
+		// WE have hitted someone is pretty good or???
+		hittedLogHits++;
 
 		IClientEntity* pEntity = Interfaces::EntList->GetClientEntity(Interfaces::Engine->GetPlayerForUserID(userid));
 		IClientEntity *pLocal = Interfaces::EntList->GetClientEntity(Interfaces::Engine->GetLocalPlayer());
@@ -271,6 +276,11 @@ void imfinnarunuponya(IGameEvent* pEvent)
 			}
 		}
 
+		
+	}
+	else {
+		// we missed ?????? log it...
+		missedLogHits++;
 		
 	}
 
@@ -784,12 +794,12 @@ void __fastcall PaintTraverse_Hooked(PVOID pPanels, int edx, unsigned int vguiPa
 		if (islbyupdate == true) {
 			//char buffer1[64];
 			//sprintf_s(buffer1, "LBY Breaker:  %f", testFloat1);
-			Render::Text(70, 400, Color(0, 255, 0, 255), Render::Fonts::LBY, "LBY");
+			Render::Text(70, 420, Color(0, 255, 0, 255), Render::Fonts::LBY, "LBY");
 		}
 		else {
 			//char buffer1[64];
 			//sprintf_s(buffer1, "LBY Breaker:  %f", testFloat1);
-			Render::Text(70, 400, Color(255, 0, 0, 150), Render::Fonts::LBY, "LBY ");
+			Render::Text(70, 420, Color(255, 0, 0, 150), Render::Fonts::LBY, "LBY ");
 		}
 
 		if (antiAimSide == true) {
@@ -861,6 +871,16 @@ void __fastcall PaintTraverse_Hooked(PVOID pPanels, int edx, unsigned int vguiPa
 		sprintf_s(bufferlineFakeAngle, "Fake Angle:  %.1f", lineFakeAngle);
 		Render::Text(70, 360, Color(202, 43, 43, 255), Render::Fonts::MenuBold, bufferlineFakeAngle);
 
+		char buffermissedLoghits[64];
+		sprintf_s(buffermissedLoghits, "Missed Shots:  %i", missedLogHits);
+		Render::Text(70, 380, Color(202, 43, 43, 255), Render::Fonts::MenuBold, buffermissedLoghits);
+
+		char bufferhittedhits[64];
+		sprintf_s(bufferhittedhits, "Hitted Shots:  %i", hittedLogHits);
+		Render::Text(70, 400, Color(202, 43, 43, 255), Render::Fonts::MenuBold, bufferhittedhits);
+
+
+		
 
 
 		if (Menu::Window.MiscTab.OtherWatermark.GetState())
