@@ -282,7 +282,7 @@ void CRageBotTab::Setup()
 	AccuracyGroup.PlaceLabledControl("Change Side on Headshot", this, &AimbotChangeSideAA);
 
 	AimbotTargetSide.SetFileId("switchsideonpress");
-	AimbotGroup.PlaceLabledControl("LBY+180 on Key", this, &AimbotTargetSide);
+	AccuracyGroup.PlaceLabledControl("LBY+180 on Key", this, &AimbotTargetSide);
 
 	//AimbotKeyFakeWalk.SetFileId("fakwewalkkey");
 	//AccuracyGroup.PlaceLabledControl("Fake Walk Key", this, &AimbotKeyFakeWalk);
