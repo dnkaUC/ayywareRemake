@@ -1391,7 +1391,7 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 				if (AimbotTargetSide >= 0 && GUI.GetKeyState(AimbotTargetSide))
 				{
 
-					eyeAngles->y = pEntity->GetLowerBodyYaw() + 180;
+					eyeAngles->y = eyeAngles->y + 180;
 
 				}
 

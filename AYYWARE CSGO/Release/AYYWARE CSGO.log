@@ -17,7 +17,6 @@
   Menu.cpp
   MetaInfo.cpp
   MiscHacks.cpp
-  NetVarManager.cpp
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2766): warning C4244: "=": Konvertierung von "const int" in "float", möglicher Datenverlust (Quelldatei wird kompiliert Hooks.cpp)
   C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2780): note: Siehe Verweis auf die Instanziierung der gerade kompilierten Funktions-template "void std::_Fill_unchecked1<_FwdIt,_Ty>(_FwdIt,_FwdIt,const _Ty &,std::false_type)".
           with
@@ -39,6 +38,7 @@ C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2766): w
               _FwdIt=float *,
               _Ty=int
           ]
+  NetVarManager.cpp
   NetVars.cpp
   NoSkycpp.cpp
   nosmoke.cpp
