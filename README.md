@@ -7,6 +7,11 @@
 - If you Press Shift on your Keyboard u have a FAKEWALK.
 - If you use Autowall DMG == 100; it will use Enemy HP always example if EnemyHP is 20 or 100.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ -22.08.2017 -
+ - small Resolver & Tank AA Update
+ - My Settings: http://fs5.directupload.net/images/170822/nj637utb.png
+ - Head Right and Head Left is always the Fake Head
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  -21.08.2017 -
  - main Release
  - Edited Resolver
