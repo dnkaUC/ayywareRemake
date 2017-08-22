@@ -1294,24 +1294,7 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 				//printf("Hitted: %i Index: %i\n", hittedLogHits[pEntity->GetIndex()], pEntity->GetIndex());
 
 				// We dont use this just for deco
-				if (oldlbyyy[pEntity->GetIndex()] == pEntity->GetLowerBodyYaw()) {
-					if (oldtimer[pEntity->GetIndex()] + 1.1f >= Interfaces::Globals->curtime) {
-						oldtimer[pEntity->GetIndex()] = Interfaces::Globals->curtime;
-						isLBYPredictited[pEntity->GetIndex()] = true;
-
-					}
-					else {
-						isLBYPredictited[pEntity->GetIndex()] = false;
-					}
-				}
-				else if (pEntity->IsDormant() || !pEntity->IsAlive()) {
-					oldtimer[pEntity->GetIndex()] = -1;
-				}
-				else {
-					oldlbyyy[pEntity->GetIndex()] = pEntity->GetLowerBodyYaw();
-					oldtimer[pEntity->GetIndex()] = Interfaces::Globals->curtime - nci->GetAvgLatency(FLOW_OUTGOING);
-					isLBYPredictited[pEntity->GetIndex()] = false;
-				}
+				
 
 
 				//.... Delta
@@ -1357,9 +1340,9 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 						}
 						else {
 
-							lbyproxytime = enemysLastProxyTimer[pEntity->GetIndex()] + 0.15f;
+							lbyproxytime = enemysLastProxyTimer[pEntity->GetIndex()] + 0.06f;
 
-							if (lbyproxytime != enemyLBYTimer[pEntity->GetIndex()] && abs(lbyproxytime - enemyLBYTimer[pEntity->GetIndex()]) > 0.6f) {
+							if (lbyproxytime != enemyLBYTimer[pEntity->GetIndex()] && abs(lbyproxytime - enemyLBYTimer[pEntity->GetIndex()]) > 0.8f) {
 
 
 
@@ -1372,9 +1355,10 @@ void  __stdcall Hooked_FrameStageNotify(ClientFrameStage_t curStage)
 
 							else {
 
+								
 								ResolverStage[pEntity->GetIndex()] = 3;
 								eyeAngles->y = oldlowerbodyyaw + deltadif;
-
+								
 								
 
 							}

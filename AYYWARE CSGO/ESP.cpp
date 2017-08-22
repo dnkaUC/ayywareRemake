@@ -781,13 +781,16 @@ void CEsp::DrawName(player_info_t pinfo, CEsp::ESPBox size, IClientEntity* pEnti
 			Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y - 32, Color(255, 0, 0, 255), Render::Fonts::ESP, "R::OldLBY+Delta");
 		}
 		else if (ResolverStage[pEntity->GetIndex()] == 4){
-			Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y - 32, Color(0, 12, 255, 255), Render::Fonts::ESP, "------------------");
+			Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y - 32, Color(0, 12, 255, 255), Render::Fonts::ESP, "R::LBYTIMING");
 		}
 		else if (ResolverStage[pEntity->GetIndex()] == 5) {
 			Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y - 32, Color(0, 255, 0, 255), Render::Fonts::ESP, "R::Database");
 		}
 		else if (ResolverStage[pEntity->GetIndex()] == 6) {
 			Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y - 32, Color(0, 255, 0, 255), Render::Fonts::ESP, "R::Aimbot");
+		}
+		else if (ResolverStage[pEntity->GetIndex()] == 7) {
+			Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y - 32, Color(0, 255, 0, 255), Render::Fonts::ESP, "R::AntiAim");
 		}
 		else {
 			Render::Text(size.x + (size.w / 2) - (nameSize.right / 2), size.y - 32, Color(237, 140, 16, 255), Render::Fonts::ESP, "Resolver: NotActive");

@@ -22,14 +22,41 @@ void FixY(const CRecvProxyData *pData, void *pStruct, void *pOut)
 	
 	static float OldLowerBodyYaws[65];
 	static float OldYawDeltas[65];
+	static float oldTimer[65];
+	static bool isLBYPredictited[65];
 	IClientEntity* player = (IClientEntity*)pStruct;
 	IClientEntity* pLocal = Interfaces::EntList->GetClientEntity(Interfaces::Engine->GetLocalPlayer());
-
+	INetChannelInfo *nci = Interfaces::Engine->GetNetChannelInfo();
 	if (!player || !pLocal || pLocal == player || player->GetTeamNum() == pLocal->GetTeamNum()) {
 		return;
 	}
 
 
+	if (OldLowerBodyYaws[player->GetIndex()] == player->GetLowerBodyYaw()) {
+		if (oldTimer[player->GetIndex()] + 1.1 >= Interfaces::Globals->curtime) {
+			oldTimer[player->GetIndex()] = Interfaces::Globals->curtime;
+			isLBYPredictited[player->GetIndex()] = true;
+
+		}
+		else {
+			isLBYPredictited[player->GetIndex()] = false;
+		}
+	}
+	else if (player->IsDormant() || !player->IsAlive()) {
+		oldTimer[player->GetIndex()] = -1;
+		isLBYPredictited[player->GetIndex()] = false;
+	}
+	else {
+		OldLowerBodyYaws[player->GetIndex()] = player->GetLowerBodyYaw();
+		oldTimer[player->GetIndex()] = Interfaces::Globals->curtime - nci->GetAvgLatency(FLOW_OUTGOING);
+		isLBYPredictited[player->GetIndex()] = false;
+	}
+
+	// Test To predict LBY
+	if (isLBYPredictited[player->GetIndex()] == true) {
+		flYaw = player->GetLowerBodyYaw();
+		ResolverStage[player->GetIndex()] = 7;
+	}
 
 	int AimbotTargetSide = Menu::Window.RageBotTab.AimbotTargetSide.GetKey();
 	if (AimbotTargetSide >= 0 && GUI.GetKeyState(AimbotTargetSide))
@@ -38,7 +65,12 @@ void FixY(const CRecvProxyData *pData, void *pStruct, void *pOut)
 		flYaw = flYaw + 180;
 		*(float*)(pOut) = flYaw;
 	}
+	else if (missedLogHits[player->GetIndex()] == 2) {
 
+		flYaw = flYaw + 180;
+		*(float*)(pOut) = flYaw;
+
+	}
 	else if (Menu::Window.RageBotTab.AimbotExtraResolver.GetState()) {
 
 		float CurYaw = player->GetLowerBodyYaw();

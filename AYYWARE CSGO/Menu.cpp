@@ -223,11 +223,9 @@ void CRageBotTab::Setup()
 	TargetGroup.PlaceLabledControl("Shot Trought Team", this, &TargetFriendlyFire);
 
 	TargetHitbox.SetFileId("tgt_hitbox");
-	TargetHitbox.AddItem("Head");
-	TargetHitbox.AddItem("Neck");
-	TargetHitbox.AddItem("Chest");
-	TargetHitbox.AddItem("Stomach");
-	TargetHitbox.AddItem("Shins");
+	TargetHitbox.AddItem("HEAD");
+	TargetHitbox.AddItem("BAIM");
+	TargetHitbox.AddItem("ALL");
 	TargetGroup.PlaceLabledControl("Hitbox", this, &TargetHitbox);
 
 	TargetHitscan.SetFileId("tgt_hitscan");
@@ -259,11 +257,6 @@ void CRageBotTab::Setup()
 	AccuracyMinimumDamage.SetValue(1.f);
 	AccuracyGroup.PlaceLabledControl("AutoWall Minimum Damage", this, &AccuracyMinimumDamage);
 
-	//AccuracyAutoStop.SetFileId("acc_stop");
-	//AccuracyGroup.PlaceLabledControl("Auto Stop", this, &AccuracyAutoStop);
-
-	//AccuracyAutoCrouch.SetFileId("acc_crouch");
-	//AccuracyGroup.PlaceLabledControl("Auto Crouch", this, &AccuracyAutoCrouch);
 
 	AccuracyAutoScope.SetFileId("acc_scope");
 	AccuracyGroup.PlaceLabledControl("Auto Scope", this, &AccuracyAutoScope);
@@ -274,7 +267,6 @@ void CRageBotTab::Setup()
 	AccuracyGroup.PlaceLabledControl("Hit Chance", this, &AccuracyHitchance);
 
 
-
 	AimbotExtraResolver.SetFileId("Extra_Resolver");
 	AccuracyGroup.PlaceLabledControl("Extra Resolver", this, &AimbotExtraResolver);
 
@@ -282,7 +274,7 @@ void CRageBotTab::Setup()
 	AccuracyGroup.PlaceLabledControl("Change Side on Headshot", this, &AimbotChangeSideAA);
 
 	AimbotTargetSide.SetFileId("switchsideonpress");
-	AccuracyGroup.PlaceLabledControl("LBY+180 on Key", this, &AimbotTargetSide);
+	AccuracyGroup.PlaceLabledControl("Target+180 on Key", this, &AimbotTargetSide);
 
 	AimbotBaimOnKey.SetFileId("baimonkeypress");
 	AccuracyGroup.PlaceLabledControl("BAIM Key", this, &AimbotBaimOnKey);

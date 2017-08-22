@@ -16,7 +16,7 @@ extern float enemysLastProxyTimer[65];
 
 
 extern float enemyLBYDelta[65];
-
+extern int ResolverStage[65];
 extern int missedLogHits[65];
 // Console Tests Vars for LBY
 extern float consoleProxyLbyLASTUpdateTime;

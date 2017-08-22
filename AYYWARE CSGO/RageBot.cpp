@@ -682,6 +682,7 @@ int CRageBot::HitScan(IClientEntity* pEntity)
 	static bool enemyHP = false;
 	
 	if (pEntity->GetVelocity().Length2D() > 3 && pEntity->GetVelocity().Length2D() < 50) {
+		
 		HitBoxesToScan.push_back((int)CSGOHitboxID::NeckLower);
 		HitBoxesToScan.push_back((int)CSGOHitboxID::Stomach); // 4
 		HitBoxesToScan.push_back((int)CSGOHitboxID::Pelvis); // 3
@@ -701,6 +702,17 @@ int CRageBot::HitScan(IClientEntity* pEntity)
 			HitBoxesToScan.push_back((int)CSGOHitboxID::RightThigh); // 8
 			HitBoxesToScan.push_back((int)CSGOHitboxID::LeftFoot); // 13
 			HitBoxesToScan.push_back((int)CSGOHitboxID::RightFoot); // 12
+		}
+		else if (HitScanMode == 1) {
+			HitBoxesToScan.push_back((int)CSGOHitboxID::Head);
+		}
+		else if (HitScanMode == 2) {
+			HitBoxesToScan.push_back((int)CSGOHitboxID::Stomach); // 4
+			HitBoxesToScan.push_back((int)CSGOHitboxID::Pelvis); // 3
+			HitBoxesToScan.push_back((int)CSGOHitboxID::LeftFoot); // 13
+			HitBoxesToScan.push_back((int)CSGOHitboxID::RightFoot); // 12
+			HitBoxesToScan.push_back((int)CSGOHitboxID::LeftThigh); // 9
+			HitBoxesToScan.push_back((int)CSGOHitboxID::RightThigh); // 8
 		}
 		else {
 
@@ -763,7 +775,7 @@ int CRageBot::HitScan(IClientEntity* pEntity)
 				autowalldmgtest[pEntity->GetIndex()] = 0;
 			}
 		}
-		else if (enemyHP) {
+		else if (enemyHP == true) {
 			Vector Point = GetHitboxPosition(pEntity, HitBoxID);
 			float Damage = 0.f;
 			Color c = Color(255, 255, 255, 255);
@@ -1225,7 +1237,7 @@ namespace AntiAims // CanOpenFire checks for fake anti aims?
 							startlbybreaker = LBYBreakerTimer;
 							bDidLBYUpdate = false;
 							pCmd->viewangles.y += 90.f;
-							if (fabsf(hackManager.pLocal()->GetEyeAngles().y - hackManager.pLocal()->GetLowerBodyYaw()) < 35 || fabsf(hackManager.pLocal()->GetLowerBodyYaw() - pCmd->viewangles.y) < 35) {
+							if (fabsf(hackManager.pLocal()->GetEyeAngles().y - hackManager.pLocal()->GetLowerBodyYaw()) < 35 || fabsf(hackManager.pLocal()->GetLowerBodyYaw() - realAngleTest) < 35) {
 								pCmd->viewangles.y += 36;
 							}
 						}
@@ -1253,7 +1265,7 @@ namespace AntiAims // CanOpenFire checks for fake anti aims?
 
 						}
 
-						if (fabsf(hackManager.pLocal()->GetEyeAngles().y - hackManager.pLocal()->GetLowerBodyYaw()) < 35 || fabsf(hackManager.pLocal()->GetLowerBodyYaw() - pCmd->viewangles.y) < 35) {
+						if (fabsf(hackManager.pLocal()->GetEyeAngles().y - hackManager.pLocal()->GetLowerBodyYaw()) < 35 || fabsf(hackManager.pLocal()->GetLowerBodyYaw() - realAngleTest) < 35) {
 							pCmd->viewangles.y += 36;
 						}
 						if (ifFakeANDRealAngleSame == realAngleTest) {
@@ -1263,7 +1275,12 @@ namespace AntiAims // CanOpenFire checks for fake anti aims?
 					}
 				}
 				else {
-					pCmd->viewangles.y -= 180.0f;
+					if (islbyupdate == true) {
+						pCmd->viewangles.y -= 162.0f;
+					}
+					else {
+						pCmd->viewangles.y -= 198.0f;
+					}
 					bHasCorrectTiming = false;
 				}
 
@@ -1335,7 +1352,12 @@ namespace AntiAims // CanOpenFire checks for fake anti aims?
 					}
 				}
 				else {
-					pCmd->viewangles.y -= 180.0f;
+					if (islbyupdate == true) {
+						pCmd->viewangles.y -= 162.0f;
+					}
+					else {
+						pCmd->viewangles.y -= 198.0f;
+					}
 					bHasCorrectTiming = false;
 				}
 				antiAimSide = false; // RIGHT HEAD
