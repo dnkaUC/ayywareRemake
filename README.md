@@ -18,4 +18,7 @@
  - Added Target Switch Side on Key Press
  - Fixed Some Bugs
  - Added Baim on Key Press
+ 
+EDIT:
+- Resolver Update
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
