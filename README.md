@@ -2,6 +2,9 @@
 
 - Contact me Steam: http://steamcommunity.com/profiles/76561198377113091/
 - UP-TO-DATE DLL: https://www.file-upload.net/download-12672108/mNaiLa3Kso3s.dll.html
+- Hitmarker Sound Info: Download this: http://www.mediafire.com/file/m7ifka92i0ffvlo/Hitmarker+sound.wav
+- Drop it in your C:/ Disk and rename it too: Hitmarker.wav then u dont have Windows Error Sound.
+
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 - FOR ALL THESE GUYS JUST WANT TO PLAY WITH DLL SOME INFO:
 - There is a Default Resolver thats active always, the Extra Resolver is just some kind "Extra"
