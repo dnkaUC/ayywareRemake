@@ -1,5 +1,6 @@
 # ayywareRemake
 
+Contact me Steam: http://steamcommunity.com/profiles/76561198377113091/
 - FOR ALL THESE GUYS JUST WANT TO PLAY WITH DLL SOME INFO:
 - There is a Default Resolver thats active always, the Extra Resolver is just some kind "Extra"
 - Tank AA usage: If you press ALT Key on your Keyboard your Fake Head Side will change RIGHT/LEFT
