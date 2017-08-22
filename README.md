@@ -1,11 +1,17 @@
 # ayywareRemake
 
+Contact me Steam: http://steamcommunity.com/profiles/76561198377113091/
 - FOR ALL THESE GUYS JUST WANT TO PLAY WITH DLL SOME INFO:
 - There is a Default Resolver thats active always, the Extra Resolver is just some kind "Extra"
 - Tank AA usage: If you press ALT Key on your Keyboard your Fake Head Side will change RIGHT/LEFT
 - Hitscan mode is auto so its useless to change there some Settings.
 - If you Press Shift on your Keyboard u have a FAKEWALK.
 - If you use Autowall DMG == 100; it will use Enemy HP always example if EnemyHP is 20 or 100.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ -22.08.2017 -
+ - small Resolver & Tank AA Update
+ - My Settings: http://fs5.directupload.net/images/170822/nj637utb.png
+ - Head Right and Head Left is always the Fake Head
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  -21.08.2017 -
  - main Release
