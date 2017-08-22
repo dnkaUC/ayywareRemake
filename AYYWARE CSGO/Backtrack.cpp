@@ -1,4 +1,4 @@
-/*#include "Backtrack.h"
+#include "Backtrack.h"
 
 LagCompensation::LagCompensation()
 {
@@ -315,5 +315,3 @@ void LagCompensation::log(ClientFrameStage_t stage)
 		}
 	}
 }
-
-*/
