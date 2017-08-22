@@ -68,15 +68,15 @@ void FixY(const CRecvProxyData *pData, void *pStruct, void *pOut)
 		enemyLBYDelta[player->GetIndex()] = yClamped;
 		*(float*)(pOut) = yClamped;
 	}
-	else if (missedLogHits[player->GetIndex()] >= 5 ){
+	else if (missedLogHits[player->GetIndex()] == 5 ){
 		flYaw = flYaw + 180;
 		*(float*)(pOut) = flYaw;
 	}
-	else if (missedLogHits[player->GetIndex()] >= 6) {
+	else if (missedLogHits[player->GetIndex()] == 6) {
 		flYaw = flYaw + 90;
 		*(float*)(pOut) = flYaw;
 	}
-	else if (missedLogHits[player->GetIndex()] >= 7 && missedLogHits[player->GetIndex()] <= 8) {
+	else if (missedLogHits[player->GetIndex()] == 7 && missedLogHits[player->GetIndex()] < 8) {
 		flYaw = flYaw - 90;
 		*(float*)(pOut) = flYaw;
 	}

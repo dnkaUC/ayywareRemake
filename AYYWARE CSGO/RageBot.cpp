@@ -1179,9 +1179,8 @@ namespace AntiAims // CanOpenFire checks for fake anti aims?
 		static float realAngleTest;
 		INetChannelInfo *nci = Interfaces::Engine->GetNetChannelInfo();
 		static int testerino;
-
 		static int startlbybreaker;
-
+		static float ifFakeANDRealAngleSame;
 
 		if (GetAsyncKeyState(0xA4) && testerino == 4) // A -  0x41   // N - 0x4E
 		{
@@ -1236,6 +1235,7 @@ namespace AntiAims // CanOpenFire checks for fake anti aims?
 							{
 								pCmd->viewangles.y += 90.f;
 								//realAngleTest = pCmd->viewangles.y;
+								ifFakeANDRealAngleSame = pCmd->viewangles.y;
 								bSendPacket = true;
 							}
 							else
@@ -1243,15 +1243,22 @@ namespace AntiAims // CanOpenFire checks for fake anti aims?
 
 								pCmd->viewangles.y += 270.f;
 								
-
+								realAngleTest = pCmd->viewangles.y;
 								bSendPacket = false;
 							}
+
+							if (ifFakeANDRealAngleSame == realAngleTest) {
+								pCmd->viewangles.y -= 180.0f;
+							}
+
 						}
 
 						if (fabsf(hackManager.pLocal()->GetEyeAngles().y - hackManager.pLocal()->GetLowerBodyYaw()) < 35 || fabsf(hackManager.pLocal()->GetLowerBodyYaw() - pCmd->viewangles.y) < 35) {
 							pCmd->viewangles.y += 36;
 						}
-						
+						if (ifFakeANDRealAngleSame == realAngleTest) {
+							pCmd->viewangles.y -= 180.0f;
+						}
 
 					}
 				}
@@ -1303,16 +1310,24 @@ namespace AntiAims // CanOpenFire checks for fake anti aims?
 							{
 								pCmd->viewangles.y -= 90.f;
 								//realAngleTest = pCmd->viewangles.y;
+								ifFakeANDRealAngleSame = pCmd->viewangles.y;
 								bSendPacket = true;
 							}
 							else
 							{
 								pCmd->viewangles.y -= 270.f;
-								
+								realAngleTest = pCmd->viewangles.y;
 								bSendPacket = false;
 							}
-						}
 
+							if (ifFakeANDRealAngleSame == realAngleTest) {
+								pCmd->viewangles.y -= 180.0f;
+							}
+
+						}
+						if (ifFakeANDRealAngleSame == realAngleTest) {
+							pCmd->viewangles.y -= 180.0f;
+						}
 						if (fabsf(hackManager.pLocal()->GetEyeAngles().y - hackManager.pLocal()->GetLowerBodyYaw()) < 35 || fabsf(hackManager.pLocal()->GetLowerBodyYaw() - pCmd->viewangles.y) < 35) {
 							pCmd->viewangles.y += 36;
 						}
