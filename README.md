@@ -1,7 +1,6 @@
 # ayywareRemake
 
 - Contact me Steam: http://steamcommunity.com/profiles/76561198377113091/
-- UP-TO-DATE DLL: Removed sorry.
 - Hitmarker Sound Info: Download this: http://www.mediafire.com/file/m7ifka92i0ffvlo/Hitmarker+sound.wav
 - Drop it in your C:/ Disk and rename it too: Hitmarker.wav then u dont have Windows Error Sound.
 
@@ -12,6 +11,12 @@
 - Hitscan mode is auto so its useless to change there some Settings.
 - If you Press Shift on your Keyboard u have a FAKEWALK.
 - If you use Autowall DMG == 100; it will use Enemy HP always example if EnemyHP is 20 or 100.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ -24.08.2017 -
+ - Updated Thirdperson u can show now Fake and Real Angles
+ - Tank AA Better ALT Switch Side
+ - LBY Breaker Update
+ - BIG Resolver Update
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  -22.08.2017 -
  - Tank AA Update
