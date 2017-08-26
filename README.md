@@ -18,6 +18,7 @@
  - Backtrack (only for Ragebot)
  - Improved Resolver
  - This update is in Beta so i need some test users just contact me via Steam.
+ Screen: http://fs5.directupload.net/images/170826/rjp3o83z.png
  
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  -24.08.2017 -
