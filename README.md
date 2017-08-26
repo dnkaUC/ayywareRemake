@@ -13,11 +13,11 @@
 - If you use Autowall DMG == 100; it will use Enemy HP always example if EnemyHP is 20 or 100.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-**
+
  -26.08.2017 -
  - Backtrack (only for Ragebot)
  - Improved Resolver
- This update is in Beta so i need some test users just contact me via Steam.
+ - This update is in Beta so i need some test users just contact me via Steam.
  
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  -24.08.2017 -
