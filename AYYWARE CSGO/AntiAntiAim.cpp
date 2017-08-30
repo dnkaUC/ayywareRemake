@@ -344,7 +344,7 @@ void ApplyAAAHooks()
 	while (pClass)
 	{
 		const char *pszName = pClass->m_pRecvTable->m_pNetTableName;
-		if (!strcmp(pszName, "DT_CSPlayer"))
+		if (!strcmp(pszName, "DT_CSPlayer") && Menu::Window.RageBotTab.Active.GetState())
 		{
 			for (int i = 0; i < pClass->m_pRecvTable->m_nProps; i++)
 			{
